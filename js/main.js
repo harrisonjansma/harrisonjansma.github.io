@@ -2,7 +2,7 @@ $(document).ready(function() {
     "use strict";
 
 
-    //------- Niceselect  js --------//  
+    //------- Niceselect  js --------//
 
     if (document.getElementById("default-select")) {
         $('select').niceSelect();
@@ -12,9 +12,9 @@ $(document).ready(function() {
     };
     if (document.getElementById("service-select")) {
         $('select').niceSelect();
-    };    
+    };
 
-    //------- Lightbox  js --------//  
+    //------- Lightbox  js --------//
 
     $('.img-pop-up').magnificPopup({
         type: 'image',
@@ -31,7 +31,7 @@ $(document).ready(function() {
         fixedContentPos: false
     });
 
-    //------- Counter  js --------//  
+    //------- Counter  js --------//
 
      if(document.getElementById("facts-area")){
       $('.counter').counterUp({
@@ -40,16 +40,16 @@ $(document).ready(function() {
       });
     }
 
-    //------- Skill  js --------//  
+    //------- Skill  js --------//
 
     $('.skill').simpleSkillbar();
 
-    //------- Filter  js --------//  
+    //------- Filter  js --------//
 
       $('.filters ul li').click(function(){
         $('.filters ul li').removeClass('active');
         $(this).addClass('active');
-        
+
         var data = $(this).attr('data-filter');
         $grid.isotope({
           filter: data
@@ -68,14 +68,14 @@ $(document).ready(function() {
       };
 
 
-    //------- Timeline js --------//  
+    //------- Timeline js --------//
 
 
     $('.content').each( function(i){
-      
+
       var bottom_of_object= $(this).offset().top + $(this).outerHeight();
       var bottom_of_window = $(window).height();
-      
+
       if( bottom_of_object > bottom_of_window){
         $(this).addClass('hidden');
       }
@@ -85,10 +85,10 @@ $(document).ready(function() {
     $(window).scroll( function(){
         /* Check the location of each element hidden */
         $('.hidden').each( function(i){
-          
+
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
-          
+
             /* If the object is completely visible in the window, fadeIn it */
             if( bottom_of_window > bottom_of_object ){
               $(this).animate({'opacity':'1'},700);
@@ -97,7 +97,7 @@ $(document).ready(function() {
     });
 
 
-    //------- Superfish nav menu  js --------//  
+    //------- Superfish nav menu  js --------//
 
     $('.nav-menu').superfish({
         animation: {
@@ -106,7 +106,7 @@ $(document).ready(function() {
         speed: 400
     });
 
-    //------- Accordian Js --------//  
+    //------- Accordian Js --------//
 
     var allPanels = $(".accordion > dd").hide();
     allPanels.first().slideDown("easeOutExpo");
@@ -129,24 +129,24 @@ $(document).ready(function() {
 
     });
 
-    //------- Tabs Js --------//  
+    //------- Tabs Js --------//
     if (document.getElementById("horizontalTab")) {
 
     $('#horizontalTab').jqTabs({
         direction: 'horizontal',
         duration: 200
     });
-    
-    };  
+
+    };
 
 
-    //------- Owl Carusel  js --------//  
+    //------- Owl Carusel  js --------//
 
     $('.active-review-carusel').owlCarousel({
         items:1,
         loop:true,
         autoplay:true,
-        autoplayHoverPause: true,        
+        autoplayHoverPause: true,
         margin:30,
         dots: true
     });
@@ -186,7 +186,7 @@ $(document).ready(function() {
             },
             455: {
                 items: 2
-            },            
+            },
             768: {
                 items: 3,
             },
@@ -197,9 +197,9 @@ $(document).ready(function() {
                 items: 5,
             }
         }
-    }); 
+    });
 
-    //------- Mobile Nav  js --------//  
+    //------- Mobile Nav  js --------//
 
     if ($('#nav-menu-container').length) {
         var $mobile_nav = $('#nav-menu-container').clone().prop({
@@ -240,7 +240,7 @@ $(document).ready(function() {
         $("#mobile-nav, #mobile-nav-toggle").hide();
     }
 
-    //------- Smooth Scroll  js --------//  
+    //------- Smooth Scroll  js --------//
 
     $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -325,7 +325,7 @@ $(document).ready(function() {
 
 
 
-    //------- Header Scroll Class  js --------//  
+    //------- Header Scroll Class  js --------//
 
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
@@ -335,15 +335,15 @@ $(document).ready(function() {
         }
     });
 
-    //------- Google Map  js --------//  
+    //------- Google Map  js --------//
 
     if (document.getElementById("map")) {
         google.maps.event.addDomListener(window, 'load', init);
 
         function init() {
             var mapOptions = {
-                zoom: 11,
-                center: new google.maps.LatLng(40.6700, -73.9400), // New York
+                zoom: 10,
+                center: new google.maps.LatLng(33.0198, -96.6989), // New York
                 styles: [{
                     "featureType": "water",
                     "elementType": "geometry",
@@ -464,14 +464,14 @@ $(document).ready(function() {
             var mapElement = document.getElementById('map');
             var map = new google.maps.Map(mapElement, mapOptions);
             var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(40.6700, -73.9400),
+                position: new google.maps.LatLng(33.0198, -96.6989),
                 map: map,
                 title: 'Snazzy!'
             });
         }
     }
 
-    //------- Mailchimp js --------//  
+    //------- Mailchimp js --------//
 
     $(document).ready(function() {
         $('#mc_embed_signup').find('form').ajaxChimp();

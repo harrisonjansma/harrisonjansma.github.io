@@ -115,6 +115,7 @@ figure {
 }
 
 a {
+  color: #212529;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -4464,12 +4465,12 @@ dl.accordion.time-line:before {
 }
 
 .footer-bottom .footer-social {
-  text-align: right;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
   .footer-bottom .footer-social {
-    text-align: left;
+    text-align: center;
     margin-top: 30px;
   }
 }
@@ -4480,6 +4481,60 @@ dl.accordion.time-line:before {
 
 .footer-text a {
   color: #8490ff;
+}
+
+
+.post-preview > a {
+  color: #212529;
+}
+
+.post-preview > a:focus, .post-preview > a:hover {
+  text-decoration: none;
+  color: #8490ff;
+
+}
+.post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
+  text-decoration: underline;
+  color: #8490ff;
+}
+
+.post-title > a:focus, .post-title > a:hover {
+  text-decoration: none;
+  color: #8490ff;
+
+}
+
+.post-preview > a > .post-title {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+.post-preview > .post-meta {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 0;
+  color: #868e96;
+}
+
+.post-preview > .post-meta > a {
+  text-decoration: none;
+  color: #212529;
+}
+.post-preview > a > .post-subtitle {
+  font-weight: 200;
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+  .post-preview > a > .post-title {
+    font-size: 30px;
+  }
 }
 
 /*-------- end footer Area -------------*/
