@@ -892,7 +892,7 @@ td, th {
 /*---------- End Elements Page -------------*/
 .sample-text-area {
   background: #f9f9ff;
-  padding: 100px 0 70px 0;
+  padding: 80px 0 70px 0;
 }
 
 .sample-text {
@@ -2314,7 +2314,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*  Homepage Styles
 /* =================================== */
 .section-gap {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
 .alert-msg {
@@ -2445,6 +2445,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .banner-area .fullscreen {
   height: 750px !important;
+}
+
+@media (max-width: 770px){
+  .banner-area {
+    height: 900px;
+  }
 }
 
 .banner-left h6 {
@@ -4493,6 +4499,12 @@ dl.accordion.time-line:before {
   color: #8490ff;
 
 }
+
+.post-title > a:focus, .post-title > a:hover {
+  text-decoration: none;
+  color: #8490ff;
+
+}
 .post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
   text-decoration: underline;
   color: #8490ff;
@@ -4505,7 +4517,7 @@ dl.accordion.time-line:before {
 }
 
 .post-preview > a > .post-title {
-  font-size: 30px;
+  font-size: 25px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -4515,6 +4527,7 @@ dl.accordion.time-line:before {
   font-size: 14px;
   font-style: italic;
   margin-top: 0;
+  margin-bottom:30;
   color: #868e96;
 }
 
@@ -4533,7 +4546,7 @@ dl.accordion.time-line:before {
 
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
