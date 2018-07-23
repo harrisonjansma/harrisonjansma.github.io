@@ -2493,7 +2493,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 767px) {
   .banner-right {
-    width: 70%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
