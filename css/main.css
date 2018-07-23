@@ -2635,7 +2635,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .portfolio-area .filters ul li:hover:after {
-  width: calc(100% - 60px);
+  width: calc(100% - 10px);
   transition: width 350ms ease-out;
 }
 
