@@ -11842,9 +11842,9 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Intuit-and-Implement:-Batch-Normalization">Batch Normalization: Intuition and Implementation<a class="anchor-link" href="#Intuit-and-Implement:-Batch-Normalization">&#182;</a></h1><p>In this notebook I will go over the intuition and implementaion of Ioffe and Svegedy's batch normalization.</p>
+<h1 id="Intuit-and-Implement:-Batch-Normalization">Batch Normalization: Intuition and Implementation<a class="anchor-link" href="#Intuit-and-Implement:-Batch-Normalization">&#182;</a></h1><p>In this notebook I will go over the intuition and implementation of Ioffe and Svegedy's batch normalization.</p>
 <h2 id="An-Intuitive-Explanation-of-Batch-Normalization">An Intuitive Explanation of Batch Normalization<a class="anchor-link" href="#An-Intuitive-Explanation-of-Batch-Normalization">&#182;</a></h2><h3 id="The-Problem">The Problem<a class="anchor-link" href="#The-Problem">&#182;</a></h3><p>Problem 1.  As the network trains, the inputs of each neuron varies wildly. As a result, each neuron must readjust itself to the varying distribution of each new batch. This is an inefficiency that only serves to slow model training. How can we regularize unit inputs?</p>
-<p>Another effect of the variatied input distribution is <a href="http://neuralnetworksanddeeplearning.com/chap5.html#the_vanishing_gradient_problem">vanishing gradients</a>. The vanishing gradient problem is a big deal, particularly for the sigmoid activation function. If $g(x)$ represents the sigmoid activation function, as $| x |$ increases, $g^\prime(x)$ tends to zero.</p>
+<p>Another effect of varied input distribution is <a href="http://neuralnetworksanddeeplearning.com/chap5.html#the_vanishing_gradient_problem">vanishing gradients</a>. The vanishing gradient problem is a big deal, particularly for the sigmoid activation function. If $g(x)$ represents the sigmoid activation function, as $| x |$ increases, $g^\prime(x)$ tends to zero.</p>
 <p><h6 class="text-center">Sigmoid Function and its Derivative</h6></p>
 <div class="align-center">
 <img src="https://cdn-images-1.medium.com/max/1500/0*K5rfrS3lIXmDh6p6." height=300 width=500>
@@ -11853,11 +11853,11 @@ div#notebook {
 <p><h6 class="text-center">The Sigmoid Sweet Spot</h6></p>
 <div class="align-center pr-30 mr-30">
 <img src="img/sweet.png" height=300 width=500>
-    </div><h3 id="Batch-Norm-as-a-Solution.">Batch Norm as a Solution.<a class="anchor-link" href="#Batch-Norm-as-a-Solution.">&#182;</a></h3><p>Batch normalization mitigates the effects of a varying input distribution. By standardizing LINK the output of neurons, we restrain variation towards saturable regions. This solves our second problem.</p>
+    </div><h3 id="Batch-Norm-as-a-Solution.">Batch Norm as a Solution.<a class="anchor-link" href="#Batch-Norm-as-a-Solution.">&#182;</a></h3><p>Batch normalization mitigates the effects of a varying input distribution. By standardizing the output of neurons, we restrain variation towards saturable regions. This solves our second problem.</p>
 <p><br></p>
 <p><img src="img/sig4.png" height=800 width=800></p>
 <p><br></p>
-<p>Batch normalization transforms neuron outputs into a unit gaussian distribution. When fed through the sigmoid funtion, layer outputs will also become more normal. As layer outputs are also layer inputs, neuron inputs will now have less variation. This solves our first problem.</p>
+<p>Batch normalization transforms neuron outputs into a unit gaussian distribution. When fed through the sigmoid function, layer outputs will also become more normal. As layer outputs are also layer inputs, neuron inputs will now have less variation. This solves our first problem.</p>
 <h3 id="Mathematical-Explanation">Mathematical Explanation<a class="anchor-link" href="#Mathematical-Explanation">&#182;</a></h3><p>With batch normalization we seek a zero-centered, unit variance distribution of inputs for our activation function. During training time we take an activation input $x_i$ and subtract it by the batch mean $\mu_{B}$
 to achieve a zero centered distribution.</p>
 <p><br></p>
