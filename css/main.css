@@ -966,12 +966,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button-group-area .genric-btn {
-  margin-right: 5px;
-  margin-top: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 .button-group-area .genric-btn:last-child {
-  margin-right: 0;
+  margin-right: 10;
 }
 
 .circle {
@@ -982,7 +982,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   outline: none;
   line-height: 20px;
-  padding: 0 30px;
+  padding: 10 30px;
   font-size: .8em;
   text-align: center;
   text-decoration: none;
@@ -1065,7 +1065,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .genric-btn.primary:hover {
-  color: #8490ff;
+  color: #fff;
   border: 1px solid #8490ff;
   background: #fff;
 }
@@ -1081,6 +1081,14 @@ h1, h2, h3, h4, h5, h6 {
   background: #8490ff;
   border: 1px solid transparent;
 }
+@media (max-width: 767px) {
+  .genric-btn.primary-border {
+    color: #8490ff;
+    border: 1px solid #8490ff;
+    background: #8490ff;
+  }
+  }
+
 
 .genric-btn.success {
   color: #fff;
