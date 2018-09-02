@@ -966,8 +966,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button-group-area .genric-btn {
-  margin-right: 10px;
-  margin-top: 10px;
+  margin-right: 5px;
+  margin-top: 5px;
 }
 
 .button-group-area .genric-btn:last-child {
@@ -981,7 +981,7 @@ h1, h2, h3, h4, h5, h6 {
 .genric-btn {
   display: inline-block;
   outline: none;
-  line-height: 40px;
+  line-height: 20px;
   padding: 0 30px;
   font-size: .8em;
   text-align: center;

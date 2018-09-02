@@ -44,18 +44,15 @@
               <li><a href="about.html">About</a></li>
 
 
-              <li class="menu-has-children"><a>Portfolio</a>
-                <ul style="display: none;">
-                  <li><a href="portfolio.html">Featured Projects</a></li>
-                  <li><a href="archive.html">Projects Archive</a></li>
-
-                </ul>
+              <li><a href="archive.html">Portfolio</a>
               </li>
 
 
               <li><a href="contact.html">Contact</a></li>
+              <li><a href="HarrisonJansmaResume.pdf" class="genric-btn primary-border circle" target="_blank">Resume</a></li>
               </ul>
             </ul>
+
           </nav><!-- #nav-menu-container -->
         </div>
       </div>
@@ -69,9 +66,9 @@
         <div class="row d-flex align-items-center justify-content-center">
           <div class="about-content col-lg-12">
             <h1 class="text-white">
-              Projects Archive
+              Portfolio
             </h1>
-            <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="archive.html"> Projects Archive</a></p>
+            <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="archive.html"> Portfolio</a></p>
           </div>
         </div>
       </div>
@@ -90,10 +87,11 @@
             <div class="post-preview">
               <a href="https://towardsdatascience.com/dont-use-dropout-in-convolutional-networks-81486c823c16" target="_blank">
                 <h2 class="post-title">
-                  Don't Use Dropout in Convolutional Networks
+                  Don't Use Dropout in Convolutional Networks (Article)
                 </h2>
-                <p>
-                  A Medium post, published in Towards Data Science, with over 1500 reads in the first 24 hours.
+
+
+            This blog post has been published and featured in Towards Data Science, with 3K reads on Medium in 2 weeks. It has also been reposted as a guest blog on KDNuggets, a leading site on Analytics, Big Data, Data Science, and Machine Learning, reaching over 500K unique visitors per month and over 230K subscribers/followers via email and social media.
                 </p>
               </a>
               <p class="post-meta">
@@ -102,14 +100,28 @@
             </div>
             <hr>
 
+            <div class="post-preview">
+              <a href="https://github.com/harrisonjansma/Portfolio/blob/master/Experiment-BatchNorm-vs-Dropout/08-12-18%20Batch%20Norm%20vs%20Dropout.ipynb" target="_blank">
+                <h2 class="post-title">
+                  Don't Use Dropout in Convolutional Networks (Experiment)
+                </h2>
 
+
+            This experiment tests whether convolutional neural networks with dropout or batch normalization are more performant in image recognition tasks. The notebook in this repository is experimental evidence supporting the Medium post I wrote explaining how to more effectively build convolutional neural networks.
+                </p>
+              </a>
+              <p class="post-meta">
+                Harrison Jansma
+                on August 14, 2018</p>
+            </div>
+            <hr>
             <div class="post-preview">
               <a href="https://towardsdatascience.com/intuit-and-implement-batch-normalization-c05480333c5b" target="_blank">
                 <h2 class="post-title">
-                  Batch Normalization: Intuition and Implementation
+                  Batch Normalization: Intuition and Implementation (Article)
                 </h2>
                 <p>
-                  A discussion on the purpose of batch normalization in neural networks. An implementation in Keras.
+                  A Towards Data Science article explaining the mathematics behind batch normalization in convolutional neural networks. After a brief description of batch normalization's regularizing effects, I explain how to implement BN in Keras. I then build an image recognition classifier using the Cifar 100 dataset.
                 </p>
               </a>
               <p class="post-meta">
@@ -127,7 +139,9 @@
                   Global Average Pooling: Object Localization
                 </h2>
                 <p>
-                  In this project I look at why Global Average Pooling is not only useful as a means to reduce memory usage in Convolutional Networks, but also to object localization...
+                  In this project, I implemented the deep learning method for object localization (finding objects in an image) proposed in this research paper. I improved code written by Alexis Cook to handle multi-class localization of images.</p><p>
+
+Computer vision has innumerable real world applications. This project was my introduction to the world of computer vision research. Since the conclusion of this project, I have focused heavily on researching recent advances in convolutional neural network architectures. Furthermore, I have made an emphasis on learning how to apply these concepts using Tensorflow and Keras.
                 </p>
               </a>
               <p class="post-meta">
@@ -143,7 +157,7 @@
             Apple Sentiment Analysis
           </h2>
           <p>
-            I took a detour into bag of words models and their applications in sentiment analysis. In thin notebook we look at the sentiment of Tweets pertaining to Apple Inc...
+            This project was motivated by my drive to learn about the best practices of predictive modeling in text data. In the write-up, I cleaned and vectorized Twitter data, visualized and examined patterns, and created a linear classifier to predict document sentiment with 89% accuracy on a validation set.
           </p>
         </a>
         <p class="post-meta">
@@ -160,7 +174,9 @@
                   Toxic Comments
                 </h3>
                 <p>
-                  Topic modelling is the act of pulling common topics of discussion from a body of documents...
+                  In this project, I used unsupervised learning to cluster forum discussions. Specifically, I performed LDA clustering on Wikipedia forum comments to see if I could isolate clusters of toxic comments.(insults, slurs,...)</p><p>
+
+I was successful in isolating toxic comments into one group. Furthermore, I gained valuable knowledge about the discussions held within the forum dataset, labeling forum posts into nine distinct categories. These nine categories could be further grouped as either relevant discussion, side conversations, or outright toxic comments.
                 </p>
               </a>
               <p class="post-meta">
@@ -177,7 +193,9 @@
                   Clustering Mental Health
                 </h2>
                 <p>
-                  In a study of unsupervised learning, I look at survey responses regarding mental health in the tech industry. I also create visualizations to evaluate clustering results...
+In this write-up, I sought to answer whether a survey of mental health benefits of tech industry employees could be used to cluster employees into groups with good and bad mental health coverage.</p><p>
+
+                  In completing this project, I learned how to encode categorical data and create an insightful EDA with great visualizations. I also learned how to implement clustering methods on data, and analyze the appropriateness of the clustering method with various techniques.
                 </p>
               </a>
               <p class="post-meta">
@@ -193,7 +211,10 @@
                   Data Science Lifecycle
                 </h2>
                 <p>
-                  In my first ever write-up I go through the full lifecycle of the model building process. I focus on cleaning, EDA, model building, and evaluation using the Titanic dataset...
+                  In this write-up, I sought to practice the entire data science lifecycle. This includes defining project end goals, data cleaning, exploratory data analysis, model comparisons, and model tuning.
+                </p><p>
+
+After a brief EDA, I visualized the Titanic dataset via a 2D projection. I then compared several machine learning algorithms and found the most accurate model to be a Gradient Boosted Machine. After a model tuning phase I increased model accuracy from 77% to 79%.
                 </p>
               </a>
               <p class="post-meta">
