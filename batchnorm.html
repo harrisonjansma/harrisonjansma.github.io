@@ -11789,7 +11789,7 @@ div#notebook {
     <body>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-          <a class="navbar-brand" href="index.html">H. Jansma</a>
+          <a class="navbar-brand" href="index">H. Jansma</a>
 
         </div>
       </nav>
@@ -11844,7 +11844,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Intuit-and-Implement:-Batch-Normalization">Batch Normalization: Intuition and Implementation<a class="anchor-link" href="#Intuit-and-Implement:-Batch-Normalization">&#182;</a></h1><p>In this notebook I will go over the intuition and implementation of Ioffe and Svegedy's batch normalization.</p>
 <h2 id="An-Intuitive-Explanation-of-Batch-Normalization">An Intuitive Explanation of Batch Normalization<a class="anchor-link" href="#An-Intuitive-Explanation-of-Batch-Normalization">&#182;</a></h2><h3 id="The-Problem">The Problem<a class="anchor-link" href="#The-Problem">&#182;</a></h3><p>Problem 1.  As the network trains, the inputs of each neuron varies wildly. As a result, each neuron must readjust itself to the varying distribution of each new batch. This is an inefficiency that only serves to slow model training. How can we regularize unit inputs?</p>
-<p>Another effect of varied input distribution is <a href="http://neuralnetworksanddeeplearning.com/chap5.html#the_vanishing_gradient_problem">vanishing gradients</a>. The vanishing gradient problem is a big deal, particularly for the sigmoid activation function. If $g(x)$ represents the sigmoid activation function, as $| x |$ increases, $g^\prime(x)$ tends to zero.</p>
+<p>Another effect of varied input distribution is <a href="http://neuralnetworksanddeeplearning.com/chap5#the_vanishing_gradient_problem">vanishing gradients</a>. The vanishing gradient problem is a big deal, particularly for the sigmoid activation function. If $g(x)$ represents the sigmoid activation function, as $| x |$ increases, $g^\prime(x)$ tends to zero.</p>
 <p><h6 class="text-center">Sigmoid Function and its Derivative</h6></p>
 <div class="align-center">
 <img src="https://cdn-images-1.medium.com/max/1500/0*K5rfrS3lIXmDh6p6." height=300 width=500>
