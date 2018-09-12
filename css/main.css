@@ -2680,6 +2680,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 10px;
 }
 
+.portfolio-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .portfolio-area .filters-content .p-inner {
   padding: 20px 0px;
   text-align: center;
@@ -4501,8 +4510,8 @@ dl.accordion.time-line:before {
 }
 
 
-.post-preview > a {
-  color: #212529;
+.post-preview > a:hover {
+  color: #8490ff;
 }
 
 .post-preview > a:focus, .post-preview > a:hover {
@@ -4528,9 +4537,9 @@ dl.accordion.time-line:before {
 }
 
 .post-preview > a > .post-title {
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 
@@ -4546,6 +4555,7 @@ dl.accordion.time-line:before {
   text-decoration: none;
   color: #212529;
 }
+
 .post-preview > a > .post-subtitle {
   font-weight: 200;
   font-size: 14px;
@@ -4554,11 +4564,17 @@ dl.accordion.time-line:before {
 
 
 
-
 @media only screen and (min-width: 768px) {
-  .post-preview > a > .post-title {
-    font-size: 25px;
+   .post-title > a {
+    font-size: 24px;
+  }
+
+  .post-title > a:hover {
+    text-decoration: none;
+    color: #8490ff;
+
   }
 }
+
 
 /*-------- end footer Area -------------*/
