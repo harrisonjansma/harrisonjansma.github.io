@@ -45,7 +45,7 @@ $(document).ready(function() {
     $('.skill').simpleSkillbar();
 
     //------- Filter  js --------//
-
+/*
       $('.filters ul li').click(function(){
         $('.filters ul li').removeClass('active');
         $(this).addClass('active');
@@ -55,7 +55,7 @@ $(document).ready(function() {
           filter: data
         })
       });
-
+*/
 
       if(document.getElementById("portfolio")){
             var $grid = $(".grid").isotope({

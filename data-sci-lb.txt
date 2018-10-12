@@ -1,0 +1,2262 @@
+<tr>
+<td>1</td>
+<td>Emil Wallner</td>
+<td>5125.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>2</td>
+<td>James Le</td>
+<td>4461.4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Peter Gleeson</td>
+<td>3470.6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Devin Soni</td>
+<td>3396.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Mybridge</td>
+<td>2818.94</td>
+<td>17</td>
+</tr>
+<tr>
+<td>6</td>
+<td>David Foster</td>
+<td>2694.71</td>
+<td>7</td>
+</tr>
+<tr>
+<td>7</td>
+<td>DipanjanDJ) Sarkar</td>
+<td>2600.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>8</td>
+<td>William Koehrsen</td>
+<td>2187.35</td>
+<td>23</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Jason Roell</td>
+<td>2118.6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Christopher Dossman</td>
+<td>2100.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Jonny Brooks-Bartlett</td>
+<td>1597.17</td>
+<td>6</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Ben Shaver</td>
+<td>1515.5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Michael Galarnyk</td>
+<td>1478.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Priya Dwivedi</td>
+<td>1454.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Lars Hulstaert</td>
+<td>1320.17</td>
+<td>6</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Rakshith Vasudev</td>
+<td>1192.4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Harshvardhan Gupta</td>
+<td>1114.75</td>
+<td>8</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Hugh Harvey</td>
+<td>1072.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Ted Petrou</td>
+<td>1068.88</td>
+<td>8</td>
+</tr>
+<tr>
+<td>20</td>
+<td>SAGAR SHARMA</td>
+<td>1034.38</td>
+<td>8</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Carson Forter</td>
+<td>970.17</td>
+<td>6</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Supervise.ly</td>
+<td>962.6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Tirthajyoti Sarkar</td>
+<td>962.33</td>
+<td>12</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Venkat Raman</td>
+<td>946.83</td>
+<td>6</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Susan Li</td>
+<td>899.83</td>
+<td>23</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Sudharsan Asaithambi</td>
+<td>864.4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Firdaouss Doukkali</td>
+<td>841.17</td>
+<td>6</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Anuja Nagpal</td>
+<td>753.17</td>
+<td>6</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Prashant Gupta</td>
+<td>751.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Karlijn Willems</td>
+<td>746.62</td>
+<td>8</td>
+</tr>
+<tr>
+<td>31</td>
+<td>dj patil</td>
+<td>727.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>32</td>
+<td>Hiromi Suenaga</td>
+<td>724.56</td>
+<td>9</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Dominic Monn</td>
+<td>724.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>34</td>
+<td>Greg Anderson</td>
+<td>698.0</td>
+<td>8</td>
+</tr>
+<tr>
+<td>35</td>
+<td>Favio V zquez</td>
+<td>677.89</td>
+<td>9</td>
+</tr>
+<tr>
+<td>36</td>
+<td>Corsair's Publishing</td>
+<td>674.04</td>
+<td>24</td>
+</tr>
+<tr>
+<td>37</td>
+<td>Yufeng G</td>
+<td>642.21</td>
+<td>14</td>
+</tr>
+<tr>
+<td>38</td>
+<td>Pascal Potvin</td>
+<td>609.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>39</td>
+<td>Brian Ray</td>
+<td>594.6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>40</td>
+<td>Paulo Ribeiro</td>
+<td>550.4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>41</td>
+<td>Pramod Chandrayan</td>
+<td>548.67</td>
+<td>6</td>
+</tr>
+<tr>
+<td>42</td>
+<td>Bernadette Low</td>
+<td>545.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>43</td>
+<td>Vijini Mallawaarachchi</td>
+<td>522.44</td>
+<td>9</td>
+</tr>
+<tr>
+<td>44</td>
+<td>Justin Gage</td>
+<td>518.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>45</td>
+<td>Noah Yonack</td>
+<td>489.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>46</td>
+<td>SeattleDataGuy</td>
+<td>438.95</td>
+<td>21</td>
+</tr>
+<tr>
+<td>47</td>
+<td>Anson Wong</td>
+<td>424.0</td>
+<td>6</td>
+</tr>
+<tr>
+<td>48</td>
+<td>Norbert Kozlowski</td>
+<td>417.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>49</td>
+<td>SaiGayatri Vadali</td>
+<td>416.54</td>
+<td>13</td>
+</tr>
+<tr>
+<td>50</td>
+<td>Pedro</td>
+<td>409.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>51</td>
+<td>Ana</td>
+<td>404.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>52</td>
+<td>David Fumo</td>
+<td>404.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>53</td>
+<td>Seth Weidman</td>
+<td>399.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>54</td>
+<td>D borah Mesquita</td>
+<td>397.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>55</td>
+<td>The Rickest Ricky</td>
+<td>391.56</td>
+<td>16</td>
+</tr>
+<tr>
+<td>56</td>
+<td>Jesse Paquette</td>
+<td>379.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>57</td>
+<td>Matthijs Cox</td>
+<td>379.5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>58</td>
+<td>Cody Marie Wild</td>
+<td>348.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>59</td>
+<td>Skyscanner Engineering</td>
+<td>344.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>60</td>
+<td>Sebastian Quintero</td>
+<td>335.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>61</td>
+<td>Igor Bobriakov</td>
+<td>318.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>62</td>
+<td>Jonathan Nolis</td>
+<td>309.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>63</td>
+<td>Shamli Prakash</td>
+<td>307.88</td>
+<td>8</td>
+</tr>
+<tr>
+<td>64</td>
+<td>Ben Weber</td>
+<td>303.25</td>
+<td>8</td>
+</tr>
+<tr>
+<td>65</td>
+<td>Dale Wahl</td>
+<td>302.6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>66</td>
+<td>Randy Lao</td>
+<td>290.89</td>
+<td>9</td>
+</tr>
+<tr>
+<td>67</td>
+<td>Daniel Shapiro, PhD</td>
+<td>285.29</td>
+<td>14</td>
+</tr>
+<tr>
+<td>68</td>
+<td>Sukant Khurana</td>
+<td>274.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>69</td>
+<td>Imaad Mohamed Khan</td>
+<td>267.0</td>
+<td>6</td>
+</tr>
+<tr>
+<td>70</td>
+<td>SmartyBro Udemy Free Courses</td>
+<td>257.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>71</td>
+<td>Haihan Lan</td>
+<td>252.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>72</td>
+<td>plotly</td>
+<td>239.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>73</td>
+<td>Greg Rafferty</td>
+<td>237.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>74</td>
+<td>Sohan Murthy</td>
+<td>234.43</td>
+<td>7</td>
+</tr>
+<tr>
+<td>75</td>
+<td>Aakash Tandel</td>
+<td>231.0</td>
+<td>9</td>
+</tr>
+<tr>
+<td>76</td>
+<td>Jesse Maegan</td>
+<td>227.85</td>
+<td>13</td>
+</tr>
+<tr>
+<td>77</td>
+<td>AMR</td>
+<td>225.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>78</td>
+<td>Sunindu Data</td>
+<td>224.4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>79</td>
+<td>Conor Dewey</td>
+<td>222.83</td>
+<td>30</td>
+</tr>
+<tr>
+<td>80</td>
+<td>TDS Team</td>
+<td>220.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>81</td>
+<td>Felipe Sanchez</td>
+<td>218.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>82</td>
+<td>Team Auquan</td>
+<td>216.67</td>
+<td>9</td>
+</tr>
+<tr>
+<td>83</td>
+<td>Saishruthi Swaminathan</td>
+<td>214.71</td>
+<td>7</td>
+</tr>
+<tr>
+<td>84</td>
+<td>Keno Leon</td>
+<td>212.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>85</td>
+<td>Jenny Listman</td>
+<td>212.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>86</td>
+<td>Ahsan Anis</td>
+<td>204.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>87</td>
+<td>Formulated.by</td>
+<td>203.5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>88</td>
+<td>Ankur Tomar</td>
+<td>193.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>89</td>
+<td>Elif Arslan</td>
+<td>192.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>90</td>
+<td>Luke James</td>
+<td>182.4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>91</td>
+<td>Lorna Maria A</td>
+<td>179.44</td>
+<td>9</td>
+</tr>
+<tr>
+<td>92</td>
+<td>Tahsin Mayeesha</td>
+<td>174.4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>93</td>
+<td>Martin Schmitz, PhD</td>
+<td>173.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>94</td>
+<td>Paulo Vasconcellos</td>
+<td>168.38</td>
+<td>8</td>
+</tr>
+<tr>
+<td>95</td>
+<td>Tony Ojeda</td>
+<td>166.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>96</td>
+<td>Pradeep Menon</td>
+<td>165.22</td>
+<td>9</td>
+</tr>
+<tr>
+<td>97</td>
+<td>Koo Ping Shung</td>
+<td>164.67</td>
+<td>6</td>
+</tr>
+<tr>
+<td>98</td>
+<td>Benjamin Cooley</td>
+<td>162.45</td>
+<td>11</td>
+</tr>
+<tr>
+<td>99</td>
+<td>Akash Kandpal</td>
+<td>161.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>100</td>
+<td>Melody Ucros</td>
+<td>158.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>101</td>
+<td>Jasper McChesney</td>
+<td>157.5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>102</td>
+<td>datales</td>
+<td>155.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>103</td>
+<td>Rohit Gupta</td>
+<td>154.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>104</td>
+<td>Schaun Wheeler</td>
+<td>149.57</td>
+<td>7</td>
+</tr>
+<tr>
+<td>105</td>
+<td>Chaim Gluck</td>
+<td>146.8</td>
+<td>10</td>
+</tr>
+<tr>
+<td>106</td>
+<td>Experfy</td>
+<td>146.0</td>
+<td>6</td>
+</tr>
+<tr>
+<td>107</td>
+<td>Julien Simon</td>
+<td>144.17</td>
+<td>12</td>
+</tr>
+<tr>
+<td>108</td>
+<td>Russell</td>
+<td>142.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>109</td>
+<td>Manja Bogicevic</td>
+<td>141.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>110</td>
+<td>Thomas Plapinger</td>
+<td>137.6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>111</td>
+<td>Ansaro</td>
+<td>136.6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>112</td>
+<td>Mark Watson</td>
+<td>135.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>113</td>
+<td>Shanif Dhanani</td>
+<td>131.39</td>
+<td>18</td>
+</tr>
+<tr>
+<td>114</td>
+<td>Glynn Bird</td>
+<td>129.0</td>
+<td>6</td>
+</tr>
+<tr>
+<td>115</td>
+<td>Maruti Techlabs</td>
+<td>127.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>116</td>
+<td>joydeep bhattacharjee</td>
+<td>127.29</td>
+<td>7</td>
+</tr>
+<tr>
+<td>117</td>
+<td>Evan Lutins</td>
+<td>125.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>118</td>
+<td>Derrick Mwiti</td>
+<td>115.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>119</td>
+<td>Linkvalue</td>
+<td>113.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>120</td>
+<td>Ronak Agrawal</td>
+<td>110.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>121</td>
+<td>Sophia Brooke</td>
+<td>104.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>122</td>
+<td>Hoa Nguyen</td>
+<td>98.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>123</td>
+<td>Adam Massachi</td>
+<td>97.67</td>
+<td>6</td>
+</tr>
+<tr>
+<td>124</td>
+<td>CloudFactory</td>
+<td>93.6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>125</td>
+<td>Sambit Mahapatra</td>
+<td>92.67</td>
+<td>6</td>
+</tr>
+<tr>
+<td>126</td>
+<td>Bibblio</td>
+<td>92.43</td>
+<td>7</td>
+</tr>
+<tr>
+<td>127</td>
+<td>TBM Growth</td>
+<td>92.4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>128</td>
+<td>Jacob_s</td>
+<td>91.17</td>
+<td>6</td>
+</tr>
+<tr>
+<td>129</td>
+<td>Tricia Aanderud</td>
+<td>89.4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>130</td>
+<td>barrysmyth</td>
+<td>84.0</td>
+<td>6</td>
+</tr>
+<tr>
+<td>131</td>
+<td>Garrett Hoffman</td>
+<td>82.17</td>
+<td>6</td>
+</tr>
+<tr>
+<td>132</td>
+<td>Kan Nishida</td>
+<td>80.61</td>
+<td>36</td>
+</tr>
+<tr>
+<td>133</td>
+<td>Greg Filla</td>
+<td>80.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>134</td>
+<td>Playment</td>
+<td>74.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>135</td>
+<td>Yu Zhou</td>
+<td>74.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>136</td>
+<td>Robert de Graaf</td>
+<td>74.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>137</td>
+<td>Natalie Olivo</td>
+<td>72.33</td>
+<td>6</td>
+</tr>
+<tr>
+<td>138</td>
+<td>Roland Jeannier</td>
+<td>70.5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>139</td>
+<td>Bernard Brenyah</td>
+<td>70.4</td>
+<td>10</td>
+</tr>
+<tr>
+<td>140</td>
+<td>Hannah Yan Han</td>
+<td>69.94</td>
+<td>17</td>
+</tr>
+<tr>
+<td>141</td>
+<td>Snehal Gawas</td>
+<td>69.6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>142</td>
+<td>Noora Husseini</td>
+<td>68.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>143</td>
+<td>Ramesh Ilangovan</td>
+<td>64.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>144</td>
+<td>Datazar</td>
+<td>59.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>145</td>
+<td>Philip Roimon Domingo</td>
+<td>59.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>146</td>
+<td>J. Nathan Matias</td>
+<td>58.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>147</td>
+<td>Eric van Rees</td>
+<td>58.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>148</td>
+<td>Adnan Siddiqi</td>
+<td>58.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>149</td>
+<td>Sanyam Bhutani</td>
+<td>56.6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>150</td>
+<td>Roy Klaasse Bos</td>
+<td>54.6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>151</td>
+<td>Estated</td>
+<td>53.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>152</td>
+<td>Thanachart Ritbumroong</td>
+<td>51.5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>153</td>
+<td>Ash S</td>
+<td>50.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>154</td>
+<td>Anirudh Kashyap</td>
+<td>48.83</td>
+<td>6</td>
+</tr>
+<tr>
+<td>155</td>
+<td>Brendan Bailey</td>
+<td>48.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>156</td>
+<td>Sean McClure</td>
+<td>47.78</td>
+<td>9</td>
+</tr>
+<tr>
+<td>157</td>
+<td>DataRegressed Team</td>
+<td>46.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>158</td>
+<td>Meu Mesmo</td>
+<td>45.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>159</td>
+<td>District Data Labs</td>
+<td>45.67</td>
+<td>27</td>
+</tr>
+<tr>
+<td>160</td>
+<td>Kei Saito</td>
+<td>44.33</td>
+<td>6</td>
+</tr>
+<tr>
+<td>161</td>
+<td>Bob Haffner</td>
+<td>43.4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>162</td>
+<td>Shirley Liu</td>
+<td>42.17</td>
+<td>6</td>
+</tr>
+<tr>
+<td>163</td>
+<td>Paula Schwarz</td>
+<td>41.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>164</td>
+<td>Eugine Kang</td>
+<td>38.06</td>
+<td>16</td>
+</tr>
+<tr>
+<td>165</td>
+<td>Frontier7</td>
+<td>37.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>166</td>
+<td>DumpDataSci</td>
+<td>37.67</td>
+<td>9</td>
+</tr>
+<tr>
+<td>167</td>
+<td>Scientific Programming</td>
+<td>36.67</td>
+<td>6</td>
+</tr>
+<tr>
+<td>168</td>
+<td>Logyc Co.</td>
+<td>36.14</td>
+<td>7</td>
+</tr>
+<tr>
+<td>169</td>
+<td>BrainStation</td>
+<td>35.67</td>
+<td>6</td>
+</tr>
+<tr>
+<td>170</td>
+<td>Naman Doshi</td>
+<td>35.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>171</td>
+<td>Dan Schoenbaum</td>
+<td>34.6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>172</td>
+<td>Pivotal</td>
+<td>34.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>173</td>
+<td>Bhavesh Bhatt</td>
+<td>34.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>174</td>
+<td>Mohtadi Ben Fraj</td>
+<td>34.0</td>
+<td>14</td>
+</tr>
+<tr>
+<td>175</td>
+<td>doc.ai</td>
+<td>33.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>176</td>
+<td>Bob Wakefield</td>
+<td>32.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>177</td>
+<td>Jared Yu</td>
+<td>32.2</td>
+<td>5</td>
+</tr>
+<tr>
+<td>178</td>
+<td>Stef Bernosky</td>
+<td>32.1</td>
+<td>10</td>
+</tr>
+<tr>
+<td>179</td>
+<td>NYU Center for Data Science</td>
+<td>31.93</td>
+<td>73</td>
+</tr>
+<tr>
+<td>180</td>
+<td>Yoni Levine</td>
+<td>31.83</td>
+<td>6</td>
+</tr>
+<tr>
+<td>181</td>
+<td>Brian McMahon</td>
+<td>31.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>182</td>
+<td>Trafford Data Lab</td>
+<td>30.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>183</td>
+<td>Gustavo Carvalho</td>
+<td>29.29</td>
+<td>7</td>
+</tr>
+<tr>
+<td>184</td>
+<td>Lee Schlenker</td>
+<td>29.21</td>
+<td>14</td>
+</tr>
+<tr>
+<td>185</td>
+<td>Programming Buddy Club</td>
+<td>28.13</td>
+<td>15</td>
+</tr>
+<tr>
+<td>186</td>
+<td>Thomas Spicer</td>
+<td>28.0</td>
+<td>8</td>
+</tr>
+<tr>
+<td>187</td>
+<td>Moko Sharma</td>
+<td>27.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>188</td>
+<td>Jo o Malossi</td>
+<td>27.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>189</td>
+<td>software academy</td>
+<td>27.5</td>
+<td>8</td>
+</tr>
+<tr>
+<td>190</td>
+<td>Veda Konduru</td>
+<td>27.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>191</td>
+<td>hide kojima</td>
+<td>27.3</td>
+<td>10</td>
+</tr>
+<tr>
+<td>192</td>
+<td>Christopher Messier</td>
+<td>27.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>193</td>
+<td>Mark Clerkin</td>
+<td>27.17</td>
+<td>6</td>
+</tr>
+<tr>
+<td>194</td>
+<td>Yves Mulkers</td>
+<td>25.93</td>
+<td>29</td>
+</tr>
+<tr>
+<td>195</td>
+<td>GradValley Data Science</td>
+<td>25.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>196</td>
+<td>Kristina Schendt</td>
+<td>25.67</td>
+<td>6</td>
+</tr>
+<tr>
+<td>197</td>
+<td>Outlier AI</td>
+<td>25.43</td>
+<td>7</td>
+</tr>
+<tr>
+<td>198</td>
+<td>Frank Schieber</td>
+<td>25.4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>199</td>
+<td>Sibel Akcekaya</td>
+<td>24.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>200</td>
+<td>Russell Jurney</td>
+<td>23.4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>201</td>
+<td>Willie Wheeler</td>
+<td>23.2</td>
+<td>5</td>
+</tr>
+<tr>
+<td>202</td>
+<td>Aditya Parameswaran</td>
+<td>22.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>203</td>
+<td>Openbridge</td>
+<td>20.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>204</td>
+<td>KenSci</td>
+<td>20.78</td>
+<td>9</td>
+</tr>
+<tr>
+<td>205</td>
+<td>Berkeley I School</td>
+<td>20.6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>206</td>
+<td>rama.dasaratha</td>
+<td>20.33</td>
+<td>9</td>
+</tr>
+<tr>
+<td>207</td>
+<td>IPL- School of Data Science</td>
+<td>20.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>208</td>
+<td>Binni Borgar hj  Data Labsland</td>
+<td>19.88</td>
+<td>8</td>
+</tr>
+<tr>
+<td>209</td>
+<td>Marco Brambilla</td>
+<td>19.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>210</td>
+<td>ajo</td>
+<td>18.7</td>
+<td>10</td>
+</tr>
+<tr>
+<td>211</td>
+<td>Berkeley Master of Engineering</td>
+<td>17.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>212</td>
+<td>AltexSoft Inc</td>
+<td>17.62</td>
+<td>8</td>
+</tr>
+<tr>
+<td>213</td>
+<td>Kenneth Foo</td>
+<td>17.33</td>
+<td>6</td>
+</tr>
+<tr>
+<td>214</td>
+<td>Susanna Tai</td>
+<td>17.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>215</td>
+<td>Minhua Lin</td>
+<td>17.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>216</td>
+<td>Andreas Kretz</td>
+<td>16.94</td>
+<td>16</td>
+</tr>
+<tr>
+<td>217</td>
+<td>Shan Tang</td>
+<td>16.77</td>
+<td>22</td>
+</tr>
+<tr>
+<td>218</td>
+<td>Maryse Colson</td>
+<td>16.67</td>
+<td>12</td>
+</tr>
+<tr>
+<td>219</td>
+<td>CORALINE CO. LTD</td>
+<td>15.64</td>
+<td>11</td>
+</tr>
+<tr>
+<td>220</td>
+<td>Vincent Granville</td>
+<td>15.45</td>
+<td>11</td>
+</tr>
+<tr>
+<td>221</td>
+<td>Ryan Dunn</td>
+<td>15.38</td>
+<td>13</td>
+</tr>
+<tr>
+<td>222</td>
+<td>Cambridge Spark</td>
+<td>15.2</td>
+<td>15</td>
+</tr>
+<tr>
+<td>223</td>
+<td>Mohammed Musfir N N</td>
+<td>15.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>224</td>
+<td>Manali Shinde</td>
+<td>15.0</td>
+<td>6</td>
+</tr>
+<tr>
+<td>225</td>
+<td>Jonathan Michael Hammond</td>
+<td>14.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>226</td>
+<td>Deena Zaidi</td>
+<td>14.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>227</td>
+<td>BCG GAMMA editor</td>
+<td>14.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>228</td>
+<td>Neuromation</td>
+<td>13.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>229</td>
+<td>Pulse Lab Jakarta</td>
+<td>13.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>230</td>
+<td>Tech Hunt</td>
+<td>13.59</td>
+<td>17</td>
+</tr>
+<tr>
+<td>231</td>
+<td>Yvan Scher</td>
+<td>13.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>232</td>
+<td>Keboola UK</td>
+<td>13.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>233</td>
+<td>Starcount</td>
+<td>12.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>234</td>
+<td>Jon Hawes</td>
+<td>12.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>235</td>
+<td>Taras Kaduk</td>
+<td>12.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>236</td>
+<td> </td>
+<td>12.32</td>
+<td>22</td>
+</tr>
+<tr>
+<td>237</td>
+<td>Ross Blanchard</td>
+<td>11.5</td>
+<td>10</td>
+</tr>
+<tr>
+<td>238</td>
+<td>Jeffrey Solis</td>
+<td>11.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>239</td>
+<td>Rick Liu</td>
+<td>11.29</td>
+<td>7</td>
+</tr>
+<tr>
+<td>240</td>
+<td>NewGenApps</td>
+<td>11.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>241</td>
+<td>Taiwo Adetiloye</td>
+<td>11.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>242</td>
+<td>Chase Cottle</td>
+<td>10.67</td>
+<td>12</td>
+</tr>
+<tr>
+<td>243</td>
+<td>Alicia Lee</td>
+<td>10.29</td>
+<td>7</td>
+</tr>
+<tr>
+<td>244</td>
+<td>Rafael Coelho</td>
+<td>10.0</td>
+<td>6</td>
+</tr>
+<tr>
+<td>245</td>
+<td>Luis Alberto Palacios</td>
+<td>9.83</td>
+<td>18</td>
+</tr>
+<tr>
+<td>246</td>
+<td>Aoun Lutfi</td>
+<td>9.67</td>
+<td>6</td>
+</tr>
+<tr>
+<td>247</td>
+<td>Lee Ngo</td>
+<td>9.5</td>
+<td>8</td>
+</tr>
+<tr>
+<td>248</td>
+<td>Chelsea Parlett</td>
+<td>9.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>249</td>
+<td>WiMLDS Paris</td>
+<td>9.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>250</td>
+<td>Geanderson Lenz</td>
+<td>8.92</td>
+<td>12</td>
+</tr>
+<tr>
+<td>251</td>
+<td>Rob Harrand</td>
+<td>8.86</td>
+<td>7</td>
+</tr>
+<tr>
+<td>252</td>
+<td>This Time Is Different</td>
+<td>8.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>253</td>
+<td>Pivigo</td>
+<td>8.22</td>
+<td>9</td>
+</tr>
+<tr>
+<td>254</td>
+<td>Chris Armbruster</td>
+<td>8.0</td>
+<td>7</td>
+</tr>
+<tr>
+<td>255</td>
+<td>Arjan Haring</td>
+<td>7.95</td>
+<td>19</td>
+</tr>
+<tr>
+<td>256</td>
+<td>Mike Cubberly</td>
+<td>7.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>257</td>
+<td>Matthew C. Higgs</td>
+<td>7.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>258</td>
+<td>Phosphorus</td>
+<td>7.57</td>
+<td>7</td>
+</tr>
+<tr>
+<td>259</td>
+<td>Gustavo Bramao</td>
+<td>7.5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>260</td>
+<td>Chris Huie</td>
+<td>7.27</td>
+<td>15</td>
+</tr>
+<tr>
+<td>261</td>
+<td>Saurav Chakravorty</td>
+<td>7.17</td>
+<td>6</td>
+</tr>
+<tr>
+<td>262</td>
+<td>elvis</td>
+<td>7.15</td>
+<td>20</td>
+</tr>
+<tr>
+<td>263</td>
+<td>Chukwudi Uraih</td>
+<td>7.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>264</td>
+<td>S dd k A l</td>
+<td>6.79</td>
+<td>14</td>
+</tr>
+<tr>
+<td>265</td>
+<td>Florian Dahlitz</td>
+<td>6.6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>266</td>
+<td>Alastair Majury</td>
+<td>6.5</td>
+<td>16</td>
+</tr>
+<tr>
+<td>267</td>
+<td>Maryna Dorash</td>
+<td>6.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>268</td>
+<td>R Weekly</td>
+<td>6.33</td>
+<td>6</td>
+</tr>
+<tr>
+<td>269</td>
+<td>Cramstack</td>
+<td>6.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>270</td>
+<td>Aaron Schiff</td>
+<td>6.0</td>
+<td>6</td>
+</tr>
+<tr>
+<td>271</td>
+<td>Rahul Agarwal</td>
+<td>6.0</td>
+<td>7</td>
+</tr>
+<tr>
+<td>272</td>
+<td>Virginia Backaitis</td>
+<td>5.62</td>
+<td>8</td>
+</tr>
+<tr>
+<td>273</td>
+<td>Armand Ruiz</td>
+<td>5.6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>274</td>
+<td>Diego Rodriguez</td>
+<td>5.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>275</td>
+<td>Raffaele Zenti</td>
+<td>5.4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>276</td>
+<td>Derrick Harris</td>
+<td>5.4</td>
+<td>10</td>
+</tr>
+<tr>
+<td>277</td>
+<td>John Snow Labs</td>
+<td>5.29</td>
+<td>7</td>
+</tr>
+<tr>
+<td>278</td>
+<td>Henry Kim</td>
+<td>4.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>279</td>
+<td>Jibbe Van Oost</td>
+<td>4.6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>280</td>
+<td>Matthew Stidham</td>
+<td>4.6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>281</td>
+<td>Demetris Gourtzilidis</td>
+<td>4.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>282</td>
+<td>Naresh Devineni</td>
+<td>4.28</td>
+<td>25</td>
+</tr>
+<tr>
+<td>283</td>
+<td>Elder Research, Inc.</td>
+<td>4.27</td>
+<td>26</td>
+</tr>
+<tr>
+<td>284</td>
+<td>Christopher Gillespie</td>
+<td>4.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>285</td>
+<td>Apipoj Piasak</td>
+<td>4.25</td>
+<td>8</td>
+</tr>
+<tr>
+<td>286</td>
+<td>Konstantina V</td>
+<td>4.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>287</td>
+<td>Data Science Studies</td>
+<td>4.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>288</td>
+<td>Bituin Callanta</td>
+<td>4.2</td>
+<td>5</td>
+</tr>
+<tr>
+<td>289</td>
+<td>Peter Stannack</td>
+<td>4.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>290</td>
+<td>Ayesha Wallayat</td>
+<td>4.0</td>
+<td>9</td>
+</tr>
+<tr>
+<td>291</td>
+<td>Shreyas Narayanan</td>
+<td>3.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>292</td>
+<td>SocialCops</td>
+<td>3.73</td>
+<td>11</td>
+</tr>
+<tr>
+<td>293</td>
+<td>Octoparse</td>
+<td>3.71</td>
+<td>7</td>
+</tr>
+<tr>
+<td>294</td>
+<td>PromptCloud</td>
+<td>3.6</td>
+<td>10</td>
+</tr>
+<tr>
+<td>295</td>
+<td>Exaptive</td>
+<td>3.36</td>
+<td>14</td>
+</tr>
+<tr>
+<td>296</td>
+<td>Chris Seal</td>
+<td>3.36</td>
+<td>14</td>
+</tr>
+<tr>
+<td>297</td>
+<td>Najeeb Khan</td>
+<td>3.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>298</td>
+<td>Andr s Espinosa</td>
+<td>3.18</td>
+<td>11</td>
+</tr>
+<tr>
+<td>299</td>
+<td>Liev Garcia</td>
+<td>3.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>300</td>
+<td>Marek Hlavac</td>
+<td>3.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>301</td>
+<td>Clay J. Seal</td>
+<td>2.93</td>
+<td>14</td>
+</tr>
+<tr>
+<td>302</td>
+<td>Chris Lange</td>
+<td>2.92</td>
+<td>13</td>
+</tr>
+<tr>
+<td>303</td>
+<td>Rhaydrick Sandokhan</td>
+<td>2.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>304</td>
+<td>Ido Zehori</td>
+<td>2.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>305</td>
+<td>Mukesh Kumar</td>
+<td>2.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>306</td>
+<td>JJ</td>
+<td>2.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>307</td>
+<td>David Harbarger</td>
+<td>2.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>308</td>
+<td>QuantInsti </td>
+<td>2.71</td>
+<td>7</td>
+</tr>
+<tr>
+<td>309</td>
+<td>AI at Columbia University Medical Center</td>
+<td>2.67</td>
+<td>12</td>
+</tr>
+<tr>
+<td>310</td>
+<td>Abhishek Bajpayee</td>
+<td>2.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>311</td>
+<td>Magpie</td>
+<td>2.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>312</td>
+<td>Vincent Alexander Saulys</td>
+<td>2.44</td>
+<td>9</td>
+</tr>
+<tr>
+<td>313</td>
+<td>Datafiniti</td>
+<td>2.25</td>
+<td>8</td>
+</tr>
+<tr>
+<td>314</td>
+<td>Sebastian Amenabar</td>
+<td>2.22</td>
+<td>9</td>
+</tr>
+<tr>
+<td>315</td>
+<td>Mohit Singh</td>
+<td>2.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>316</td>
+<td>Affine</td>
+<td>2.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>317</td>
+<td>HungWilliam" Mai</td>
+<td>2.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>318</td>
+<td>Gopi Vikranth</td>
+<td>2.0</td>
+<td>6</td>
+</tr>
+<tr>
+<td>319</td>
+<td>Ilexa Yardley</td>
+<td>1.96</td>
+<td>72</td>
+</tr>
+<tr>
+<td>320</td>
+<td>Imarticus Learning</td>
+<td>1.96</td>
+<td>23</td>
+</tr>
+<tr>
+<td>321</td>
+<td>Civis Analytics</td>
+<td>1.96</td>
+<td>23</td>
+</tr>
+<tr>
+<td>322</td>
+<td>R. Kukuh</td>
+<td>1.92</td>
+<td>12</td>
+</tr>
+<tr>
+<td>323</td>
+<td>Erin Fahrenkopf</td>
+<td>1.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>324</td>
+<td>Michael Costa</td>
+<td>1.8</td>
+<td>5</td>
+</tr>
+<tr>
+<td>325</td>
+<td>dataaspirant</td>
+<td>1.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>326</td>
+<td>GE Digital Europe Foundry</td>
+<td>1.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>327</td>
+<td>Maxime Pawlak</td>
+<td>1.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>328</td>
+<td>DigitYser</td>
+<td>1.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>329</td>
+<td>OSIsoft LATAM</td>
+<td>1.0</td>
+<td>6</td>
+</tr>
+<tr>
+<td>330</td>
+<td>Harry zheng</td>
+<td>1.0</td>
+<td>6</td>
+</tr>
+<tr>
+<td>331</td>
+<td>Outside Two Standard Deviations</td>
+<td>1.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>332</td>
+<td>rorodata</td>
+<td>1.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>333</td>
+<td>Mukerong</td>
+<td>1.0</td>
+<td>6</td>
+</tr>
+<tr>
+<td>334</td>
+<td>The AI Academy</td>
+<td>1.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>335</td>
+<td>Apple Search Ads</td>
+<td>1.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>336</td>
+<td>DataCritics</td>
+<td>1.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>337</td>
+<td>Chakshu Diwan</td>
+<td>1.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>338</td>
+<td>Dr J Rogel-Salazar</td>
+<td>0.86</td>
+<td>7</td>
+</tr>
+<tr>
+<td>339</td>
+<td>Ian Hagerman</td>
+<td>0.83</td>
+<td>6</td>
+</tr>
+<tr>
+<td>340</td>
+<td>Avishek Priyadarshi</td>
+<td>0.78</td>
+<td>9</td>
+</tr>
+<tr>
+<td>341</td>
+<td>Keheira tha Dev</td>
+<td>0.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>342</td>
+<td>Emily Glauser</td>
+<td>0.75</td>
+<td>8</td>
+</tr>
+<tr>
+<td>343</td>
+<td>James Denney</td>
+<td>0.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>344</td>
+<td>Jesse s Big Data Adventures</td>
+<td>0.75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>345</td>
+<td>Ubajaka CJ</td>
+<td>0.65</td>
+<td>23</td>
+</tr>
+<tr>
+<td>346</td>
+<td>Sandeep Uttamchandani</td>
+<td>0.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>347</td>
+<td>SWIMMING IN THE DATA LAKE</td>
+<td>0.5</td>
+<td>8</td>
+</tr>
+<tr>
+<td>348</td>
+<td>Alfonso Llanes</td>
+<td>0.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>349</td>
+<td>Everett Yee</td>
+<td>0.5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>350</td>
+<td>Anshita Solanki</td>
+<td>0.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>351</td>
+<td>Kevin Kautz</td>
+<td>0.38</td>
+<td>8</td>
+</tr>
+<tr>
+<td>352</td>
+<td>The Center of Applied Data ScienceCADS)</td>
+<td>0.38</td>
+<td>8</td>
+</tr>
+<tr>
+<td>353</td>
+<td>MarTech Advisor</td>
+<td>0.25</td>
+<td>8</td>
+</tr>
+<tr>
+<td>354</td>
+<td>Will Velida</td>
+<td>0.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>355</td>
+<td>Yellowfin</td>
+<td>0.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>356</td>
+<td>Clutch.AI</td>
+<td>0.25</td>
+<td>24</td>
+</tr>
+<tr>
+<td>357</td>
+<td>Canopus Infosystems</td>
+<td>0.22</td>
+<td>36</td>
+</tr>
+<tr>
+<td>358</td>
+<td>Matthew Terribile</td>
+<td>0.2</td>
+<td>5</td>
+</tr>
+<tr>
+<td>359</td>
+<td>DATAVLT</td>
+<td>0.17</td>
+<td>6</td>
+</tr>
+<tr>
+<td>360</td>
+<td>Boundless Notions</td>
+<td>0.17</td>
+<td>12</td>
+</tr>
+<tr>
+<td>361</td>
+<td>OCTUS TECHNOLOGY</td>
+<td>0.14</td>
+<td>7</td>
+</tr>
+<tr>
+<td>362</td>
+<td>Alan Tsai</td>
+<td>0.11</td>
+<td>18</td>
+</tr>
+<tr>
+<td>363</td>
+<td>Plugar Intelig ncia</td>
+<td>0.0</td>
+<td>8</td>
+</tr>
+<tr>
+<td>364</td>
+<td>Sammy Deprez</td>
+<td>0.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>365</td>
+<td>ExcelR Solutions</td>
+<td>0.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>366</td>
+<td>Mingyi Qian</td>
+<td>0.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>367</td>
+<td>Laurent Kinet</td>
+<td>0.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>368</td>
+<td>Lityx</td>
+<td>0.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>369</td>
+<td>Katie Patrick</td>
+<td>0.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>370</td>
+<td>NodeGraph</td>
+<td>0.0</td>
+<td>10</td>
+</tr>
+<tr>
+<td>371</td>
+<td>Pio Calderon</td>
+<td>0.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>372</td>
+<td>Nandhini G</td>
+<td>0.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>373</td>
+<td>Olivier Dierickx</td>
+<td>0.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>374</td>
+<td>Vin cius Rodrigues</td>
+<td>0.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>375</td>
+<td>medicilon</td>
+<td>0.0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>376</td>
+<td>Avinash Vamshi</td>
+<td>0.0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>377</td>
+<td>DatiLab</td>
+<td>0.0</td>
+<td>4</td>
+</tr>
