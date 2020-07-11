@@ -1081,15 +1081,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .genric-btn.primary-border:hover {
-  color: #fff;
+  color: #fff !important;
   background: #8490ff;
   border: 1px solid transparent;
 }
-@media (max-width: 767px) {
+
+
+@media (max-width: 990px) {
   .genric-btn.primary-border {
     color: #8490ff;
     border: 1px solid #8490ff;
     background: #8490ff;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-top: 10px;
   }
   }
 
@@ -2275,7 +2280,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 22px 10px 15px;
   position: relative;
   text-decoration: none;
-  width: 100%;
+  width: 88%;
   display: block;
   outline: none;
   font-weight: 400;
@@ -2461,7 +2466,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 .section-title h1 {
   margin-bottom: 10px;
 }
+.personal-details {
 
+}
+@media (max-width: 575px){
+.personal-details {
+  padding-left: 10px;
+}
+}
 /*-------- Start Banner Area ------------*/
 .banner-area {
   background: #f9f9ff;
