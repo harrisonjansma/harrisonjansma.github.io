@@ -175,8 +175,11 @@ hr{ border:0; border-top:1px solid var(--line); margin:0; }
   padding:34px 28px !important;
   box-shadow:var(--shadow-sm);
   transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-  height:100%;
-  margin-bottom:26px;
+  /* margin lives on the same axis as height:100%, so subtract it —
+     otherwise flex columns inflate the card by its own margins */
+  margin-top:0 !important;
+  margin-bottom:30px;
+  height:calc(100% - 30px);
 }
 .single-services:hover{
   transform:translateY(-4px);
@@ -319,4 +322,7 @@ hr{ border:0; border-top:1px solid var(--line); margin:0; }
   .banner-left h2{ font-size:2.3rem; }
   .section-gap{ padding:64px 0; }
   .hero-stats{ gap:24px; }
+  /* Stacked skill columns: left-aligned labels and tighter headings */
+  .single-skill p{ text-align:left !important; }
+  .skillbar-wraps h4{ padding-top:34px; }
 }
