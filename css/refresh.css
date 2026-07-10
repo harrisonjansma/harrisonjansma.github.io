@@ -1,0 +1,322 @@
+/*==============================================================
+  refresh.css — 2026 modernization layer
+  Loaded LAST, on top of the original Colorlib theme (main.css).
+  Refines typography, color, spacing, and component polish without
+  changing the underlying layout/structure.
+==============================================================*/
+
+:root{
+  --ink:      #171a26;   /* primary text            */
+  --ink-soft: #4a5163;   /* secondary text          */
+  --muted:    #6b7385;   /* muted / meta            */
+  --line:     #e8eaf2;   /* hairline borders        */
+  --bg:       #ffffff;
+  --bg-tint:  #f7f8fc;   /* section backgrounds     */
+  --accent:   #4f46e5;   /* indigo                  */
+  --accent-2: #7c3aed;   /* violet                  */
+  --accent-ink:#3730a3;
+  --grad: linear-gradient(120deg, #4f46e5 0%, #7c3aed 100%);
+  --shadow-sm: 0 1px 2px rgba(23,26,38,.06), 0 2px 8px rgba(23,26,38,.05);
+  --shadow-md: 0 10px 30px -12px rgba(23,26,38,.22);
+  --shadow-lg: 0 24px 60px -20px rgba(79,70,229,.35);
+}
+
+/*----------------------  Typography  ----------------------*/
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif !important;
+  color:var(--ink-soft);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-size:16px;
+  line-height:1.7;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif !important;
+  color:var(--ink);
+  letter-spacing:-.02em;
+  font-weight:700;
+}
+.banner-left h2,
+.about-content h1,
+.title h1,
+.header-text h1,
+.personal-details h1{
+  font-family:'Space Grotesk','Inter',sans-serif !important;
+  letter-spacing:-.03em;
+  font-weight:700;
+}
+p{ color:var(--ink-soft); }
+a{ transition:color .2s ease; }
+a:hover{ color:var(--accent); }
+::selection{ background:rgba(79,70,229,.16); }
+
+/*----------------------  Header / Nav  ----------------------*/
+#header{
+  position:sticky; top:0; z-index:999;
+  background:rgba(255,255,255,.82);
+  -webkit-backdrop-filter:saturate(180%) blur(12px);
+  backdrop-filter:saturate(180%) blur(12px);
+  border-bottom:1px solid var(--line);
+  padding:6px 0;
+}
+#header #logo h3{
+  font-family:'Space Grotesk','Inter',sans-serif !important;
+  font-weight:700; color:var(--ink); margin:0; letter-spacing:-.02em;
+}
+.nav-menu li a{
+  color:var(--ink-soft) !important;
+  font-weight:500; font-size:15px;
+  position:relative; transition:color .2s ease;
+}
+.nav-menu li a:hover,
+.nav-menu li.menu-active a{ color:var(--accent) !important; }
+.nav-menu > li > a.primary-border{
+  background:var(--grad) !important;
+  color:#fff !important;
+  border:none !important;
+  padding:9px 22px !important;
+  border-radius:999px !important;
+  box-shadow:0 6px 18px -6px rgba(79,70,229,.6);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.nav-menu > li > a.primary-border:hover{
+  color:#fff !important;
+  transform:translateY(-1px);
+  box-shadow:0 10px 24px -6px rgba(79,70,229,.7);
+}
+
+/*----------------------  Buttons  ----------------------*/
+.primary-btn,
+.banner-left .primary-btn,
+.home-about-right .primary-btn,
+.portfolio-area .primary-btn{
+  background:var(--grad) !important;
+  border-radius:999px !important;
+  font-weight:600 !important;
+  letter-spacing:.01em;
+  box-shadow:0 8px 22px -8px rgba(79,70,229,.55);
+  transition:transform .2s ease, box-shadow .2s ease !important;
+  text-transform:none !important;
+}
+.primary-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 14px 30px -10px rgba(79,70,229,.65) !important;
+}
+.primary-btn.btn-ghost{
+  background:transparent !important;
+  color:var(--accent) !important;
+  border:1.5px solid var(--line) !important;
+  box-shadow:none;
+}
+.primary-btn.btn-ghost:hover{
+  border-color:var(--accent) !important;
+  color:var(--accent) !important;
+}
+
+/*----------------------  Gradient surfaces  ----------------------*/
+.p1-gradient-bg,
+.about-banner,
+.facts-area,
+.brands-area{
+  background:var(--grad) !important;
+}
+.about-banner{ padding:120px 0 70px; }
+.about-banner h1{ color:#fff !important; letter-spacing:-.03em; }
+
+/*----------------------  Hero  ----------------------*/
+.banner-area{ background:var(--bg-tint); }
+.banner-left h5{
+  color:var(--accent) !important;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-weight:600;
+  font-size:13px;
+}
+.banner-left h2{ color:var(--ink); font-size:3.1rem; line-height:1.08; }
+.banner-left p{ font-size:1.12rem; color:var(--ink-soft); max-width:34ch; }
+.banner-right img{
+  border-radius:18px;
+  box-shadow:var(--shadow-md);
+}
+
+/* Hero quick-stats strip */
+.hero-stats{ display:flex; gap:38px; margin:26px 0 30px; flex-wrap:wrap; }
+.hero-stats .num{
+  font-family:'Space Grotesk','Inter',sans-serif;
+  font-size:1.7rem; font-weight:700; color:var(--ink);
+  background:var(--grad); -webkit-background-clip:text; background-clip:text;
+  -webkit-text-fill-color:transparent; line-height:1;
+}
+.hero-stats .lbl{ font-size:.8rem; color:var(--muted); margin-top:6px; display:block; letter-spacing:.01em; }
+.hero-btns{ display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+
+/*----------------------  Section rhythm & titles  ----------------------*/
+.section-gap{ padding:90px 0; }
+.title h1, .header-text h1{ font-size:2.15rem; margin-bottom:14px; }
+.title p, .header-text p{ color:var(--muted); font-size:1.02rem; }
+.section-tint{ background:var(--bg-tint); }
+hr{ border:0; border-top:1px solid var(--line); margin:0; }
+
+.personal-details h1{ font-size:2.15rem; }
+.generic-blockquote{
+  background:var(--bg-tint) !important;
+  border-left:3px solid var(--accent) !important;
+  border-radius:0 12px 12px 0;
+  padding:26px 30px !important;
+  color:var(--ink-soft);
+}
+.generic-blockquote p{ font-size:1.02rem !important; }
+
+/*----------------------  "Areas of Interest" cards  ----------------------*/
+.single-services{
+  background:var(--bg);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:34px 28px !important;
+  box-shadow:var(--shadow-sm);
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  height:100%;
+  margin-bottom:26px;
+}
+.single-services:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow-md);
+  border-color:#d7d9ec;
+}
+.single-services .lnr{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:52px; height:52px; border-radius:13px;
+  background:rgba(79,70,229,.10);
+  color:var(--accent) !important;
+  font-size:24px; margin-bottom:18px;
+  -webkit-text-fill-color:var(--accent);
+}
+.single-services:hover .lnr{ background:var(--grad); color:#fff !important; -webkit-text-fill-color:#fff; }
+.single-services h4{ font-size:1.15rem; margin-bottom:10px; }
+.single-services p{ font-size:.96rem; color:var(--muted); }
+
+/*----------------------  Skill bars  ----------------------*/
+.skillbar-wraps h4{ font-size:1.15rem; }
+.single-skill p{ font-size:.92rem !important; color:var(--ink-soft); margin-bottom:8px; font-weight:500; }
+.single-skill .skill{
+  background:#eceeffb0 !important;
+  border-radius:99px; height:9px; overflow:hidden;
+}
+.single-skill .sb_bar{
+  background:var(--grad) !important;
+  border-radius:99px; height:9px;
+}
+
+/*----------------------  Selected Work cards (home)  ----------------------*/
+.single-recent-blog{ margin-bottom:30px; }
+.work-card{
+  background:var(--bg);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:30px 28px;
+  height:100%;
+  box-shadow:var(--shadow-sm);
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  display:flex; flex-direction:column;
+}
+.work-card:hover{ transform:translateY(-5px); box-shadow:var(--shadow-md); border-color:#d7d9ec; }
+.work-card .tag{
+  display:inline-block; font-size:.72rem; font-weight:600; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--accent);
+  background:rgba(79,70,229,.09); padding:5px 12px; border-radius:99px; margin-bottom:16px;
+  align-self:flex-start;
+}
+.work-card h4{ font-size:1.18rem; margin-bottom:10px; line-height:1.3; }
+.work-card p{ font-size:.95rem; color:var(--muted); margin-bottom:18px; }
+.work-card .metric{
+  margin-top:auto; display:flex; gap:22px; flex-wrap:wrap;
+  border-top:1px solid var(--line); padding-top:16px;
+}
+.work-card .metric b{
+  font-family:'Space Grotesk','Inter',sans-serif; display:block; font-size:1.25rem; color:var(--ink);
+}
+.work-card .metric span{ font-size:.74rem; color:var(--muted); }
+
+/*----------------------  "Other Platforms" cards  ----------------------*/
+.single-price{
+  border:1px solid var(--line) !important;
+  border-radius:18px !important;
+  box-shadow:var(--shadow-sm);
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  padding:20px !important;
+}
+.single-price:hover{ transform:translateY(-4px); box-shadow:var(--shadow-md); border-color:#d7d9ec; }
+.single-price .top-part img{ border-radius:14px; }
+.single-price h4{ margin-top:14px; }
+.platform-grid .p-icon{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:66px; height:66px; border-radius:18px; margin:6px auto 4px;
+  background:rgba(79,70,229,.10); color:var(--accent); font-size:30px;
+  transition:background .25s ease, color .25s ease;
+}
+.platform-grid .p-icon .fa{ color:inherit; }
+.platform-grid .single-price:hover .p-icon{ background:var(--grad); color:#fff; }
+
+/*----------------------  Timeline (about)  ----------------------*/
+/* Keep timeline entries visible regardless of the theme's scroll-reveal JS */
+.timeline ul li .content,
+.timeline ul li .content.hidden{ opacity:1 !important; }
+.timeline ul li{ background:var(--line); }
+.timeline ul li:nth-child(odd) .content,
+.timeline ul li:nth-child(even) .content{
+  border-radius:14px;
+  box-shadow:var(--shadow-sm);
+  border:1px solid var(--line);
+}
+.timeline ul li .content h4 time{ color:var(--ink); font-weight:700; }
+.timeline ul li::after{ background:var(--accent) !important; border-color:#fff; }
+.badge-current{
+  display:inline-block; margin-top:8px; font-size:.7rem; font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; color:#fff;
+  background:var(--grad); padding:3px 10px; border-radius:99px;
+}
+
+/*----------------------  FAQ accordion  ----------------------*/
+.accordion dt a{ color:var(--ink) !important; font-weight:600; }
+.accordion dt a.active,
+.accordion dt a:hover{ color:var(--accent) !important; }
+
+/*----------------------  Archive / portfolio list  ----------------------*/
+.post-preview{ padding:6px 0; }
+.post-title a{ color:var(--ink) !important; font-weight:600; letter-spacing:-.01em; }
+.post-title a:hover{ color:var(--accent) !important; }
+.portfolio-photo{ border-radius:12px; box-shadow:var(--shadow-sm); }
+.single-portfolio .p-inner h5{ color:var(--ink); }
+.single-portfolio .cat{ color:var(--muted); }
+.filters ul li.active{ color:var(--accent); border-color:var(--accent); }
+
+/*----------------------  Footer  ----------------------*/
+.footer-area{
+  background:#12141f !important;
+  padding:70px 0 40px;
+}
+.footer-area h4{ color:#fff !important; font-size:1.05rem; }
+.footer-area p,
+.footer-area .footer-text{ color:#9aa1b4 !important; font-size:.92rem; }
+.footer-area a{ color:#c3c8d6 !important; }
+.footer-area a:hover{ color:#fff !important; }
+.footer-social a{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:40px; height:40px; border-radius:10px; margin-right:8px;
+  background:rgba(255,255,255,.07); color:#c3c8d6 !important;
+  transition:background .2s ease, color .2s ease, transform .2s ease;
+}
+.footer-social a:hover{ background:var(--grad); color:#fff !important; transform:translateY(-2px); }
+.footer-cta a{
+  display:inline-block; background:var(--grad); color:#fff !important;
+  padding:11px 24px; border-radius:999px; font-weight:600; margin-top:6px;
+  box-shadow:0 8px 22px -8px rgba(79,70,229,.6); transition:transform .2s ease;
+}
+.footer-cta a:hover{ transform:translateY(-2px); color:#fff !important; }
+
+/*----------------------  Responsive niceties  ----------------------*/
+@media (max-width:768px){
+  .banner-left h2{ font-size:2.3rem; }
+  .section-gap{ padding:64px 0; }
+  .hero-stats{ gap:24px; }
+}
