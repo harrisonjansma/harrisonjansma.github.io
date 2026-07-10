@@ -85,6 +85,23 @@ a:hover{ color:var(--accent); }
   box-shadow:0 10px 24px -6px rgba(79,70,229,.7);
 }
 
+/* Mobile nav: the theme's fixed toggle/panel share z-index 999 with the
+   sticky header, which paints later and buries them — lift them above it */
+#mobile-nav-toggle{
+  z-index:1002;
+  top:18px;
+  right:14px;
+  width:44px; height:44px;
+  border-radius:12px;
+  background:rgba(79,70,229,.10);
+}
+#mobile-nav-toggle i{ color:var(--ink); font-size:22px; line-height:44px; }
+body.mobile-nav-active #mobile-nav-toggle i{ color:#fff; }
+#mobile-nav{ z-index:1001; background:rgba(18,20,31,.97); }
+#mobile-body-overly{ z-index:1000; }
+#mobile-nav ul li a{ color:#e8eaf2; }
+#mobile-nav ul li a:hover{ color:#fff; }
+
 /*----------------------  Buttons  ----------------------*/
 .primary-btn,
 .banner-left .primary-btn,
