@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Editor / OS cruft
+Thumbs.db
+*~
+.idea/
+.vscode/
