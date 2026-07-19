@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon-->
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="img/favicon-180.png">
+  <link rel="shortcut icon" href="img/favicon-32.png">
+  <meta name="theme-color" content="#4f46e5">
+  <!-- Author Meta -->
+  <meta name="author" content="Harrison Jansma">
+  <!-- Meta Description -->
+  <meta name="description" content="Live Call Copilot — I rebuilt the shape of my Capital One real-time agent-assist system in public: streaming transcript, self-drafting notes, RAG procedure docs, and a sub-second frustration alert, running live in the browser.">
+  <!-- Meta Keyword -->
+  <meta name="keywords" content="Harrison Jansma, Live Call Copilot, real-time agent assist, Deepgram, OpenAI, RAG, pgvector, streaming NLP, generative AI product">
+  <!-- meta character set -->
+  <meta charset="UTF-8">
+  <!-- Site Title -->
+  <title>Live Call Copilot — Harrison Jansma</title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Live Call Copilot — a real-time agent-assist demo you can talk into">
+  <meta property="og:description" content="A public rebuild of the shape of my Capital One agent-assist system: streaming transcript, self-drafting notes, RAG procedure docs, and a sub-second frustration alert — in the browser.">
+  <meta property="og:image" content="img/call-copilot.png">
+  <meta property="og:type" content="article">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <!--
+    CSS
+    ============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/refresh.css">
+
+    <style>
+      .post-body { padding-top: 50px; padding-bottom: 60px; }
+      .post-body h2 { font-family: 'Space Grotesk', sans-serif; margin-top: 42px; margin-bottom: 14px; }
+      .post-body h2:first-child { margin-top: 0; }
+      .post-body p { font-size: 16px; line-height: 1.8; margin-bottom: 18px; color: var(--muted, #4b5563); }
+      .post-body ul { margin-bottom: 20px; }
+      .post-body li { font-size: 16px; line-height: 1.7; margin-bottom: 8px; }
+      .post-body a { text-decoration: underline; text-underline-offset: 2px; }
+      .post-hero { border-radius: 16px; overflow: hidden; box-shadow: 0 24px 60px -24px rgba(15,23,42,.45); border: 1px solid rgba(15,23,42,.08); margin: 8px 0 10px; }
+      .post-hero img { display: block; width: 100%; height: auto; }
+      .hero-caption { font-size: 13px; color: var(--muted, #6b7280); text-align: center; margin-bottom: 30px; }
+      .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin: 26px 0 6px; }
+      .kicker { text-transform: uppercase; letter-spacing: .18em; font-size: 12px; font-weight: 700; color: #6366f1; margin-bottom: 8px; }
+      .lede { font-size: 19px !important; line-height: 1.7 !important; color: #1f2937 !important; }
+      .post-body code { background: rgba(99,102,241,.08); border-radius: 5px; padding: 1px 6px; font-size: 14px; }
+      .arch-pre { background: #0b1120; color: #cdd7ea; border-radius: 12px; padding: 18px 20px; font-size: 13px; line-height: 1.6; overflow-x: auto; }
+    </style>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="container main-menu">
+        <div class="row align-items-center justify-content-between d-flex">
+          <div class id="logo">
+            <a href="/"><h3>Harrison Jansma</h3></a>
+         </div>
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li><a href="/">Home</a></li>
+              <li><a href="about">About</a></li>
+              <li><a href="projects">Projects</a></li>
+              <li><a href="huckleberry">Huck</a></li>
+              <li><a href="https://www.amyjansma.com">The Wife</a> </li>
+              <li><a href="HarrisonJansmaResume.pdf" class="genric-btn primary-border circle" target="_blank">Resume</a></li>
+              </ul>
+          </nav><!-- #nav-menu-container -->
+        </div>
+      </div>
+    </header><!-- #header -->
+
+    <!-- start banner Area -->
+    <section class="about-banner">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="about-content col-lg-12">
+            <h1 class="text-white">
+              Live Call Copilot
+            </h1>
+            <p class="text-white link-nav"><a href="/">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="projects"> Projects</a>  <span class="lnr lnr-arrow-right"></span>  Live Call Copilot</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End banner Area -->
+
+    <section class="post-body">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+
+            <p class="kicker">Generative-AI product &middot; Real-time NLP</p>
+            <p class="lede">
+              At Capital One I lead the team that builds real-time, LLM-powered tools for our contact centers —
+              systems that listen to a live call and help the agent while it's still happening. That work is
+              proprietary; I can describe it, but a hiring manager can't click it. So I rebuilt the
+              <em>shape</em> of it in public, solo, on a hobbyist stack — and you can talk into it right now.
+            </p>
+
+            <div class="cta-row">
+              <a href="https://agentassistdemo.harrisonjansma.com" target="_blank" class="primary-btn text-uppercase">Try the live demo</a>
+              <a href="https://github.com/harrisonjansma/harrisons-agent-assist" target="_blank" class="primary-btn btn-ghost text-uppercase">View the code</a>
+            </div>
+
+            <div class="post-hero">
+              <a href="https://agentassistdemo.harrisonjansma.com" target="_blank">
+                <img src="img/call-copilot.png" alt="Live Call Copilot — streaming transcript, self-drafting notes, RAG procedure docs, and a frustration alert">
+              </a>
+            </div>
+            <p class="hero-caption">The demo mid-call: a two-voice transcript, self-drafting notes, RAG-retrieved procedure docs, and a sub-second frustration alert. <a href="https://agentassistdemo.harrisonjansma.com" target="_blank">agentassistdemo.harrisonjansma.com</a></p>
+
+            <h2>Why I built this</h2>
+            <p>
+              As a customer and an agent talk, a good copilot should transcribe the call, retrieve the right
+              procedure, draft the notes, and flag a frustrated caller within about a second — so a supervisor
+              can step in before the call goes sideways. That's the product I lead at work, and it's the most
+              interesting kind of AI engineering I know: real people, real time, real stakes.
+            </p>
+            <p>
+              To show the shape of it without touching anything proprietary, I needed a fictional business to
+              support. I used one I'd already built — <strong>Shopfolio</strong>, a little content back-office I
+              made for my wife to help manage her
+              <a href="https://www.pinterest.com/itsamyjansma/my-fashion-favorites-itsamyjansma/" target="_blank">Pinterest content</a>.
+              So the sample call is a creator whose custom-domain storefront is down, and the copilot helps the
+              support agent work the problem. None of it touches Capital One's systems, data, models, or code —
+              it's a clean-room rebuild of the <em>idea</em>.
+            </p>
+
+            <h2>What this is — and what it isn't</h2>
+            <p>
+              This isn't a machine-learning model I trained. The speech-to-text is <strong>Deepgram</strong>;
+              the notes, document retrieval, and sentiment are <strong>OpenAI</strong> API calls. Those are
+              off-the-shelf, general-purpose services anyone can call. What the project demonstrates is
+              <strong>using assistive / generative-AI technologies intelligently</strong> — composing commodity
+              models into a real-time product that fills an actual need. The skill on display is knowing
+              <em>which</em> model to reach for and building the system around it, not inventing the model.
+            </p>
+
+            <h2>The architecture</h2>
+            <p>
+              One decision drove everything: <strong>a single WebSocket per session carries both the uplink
+              audio and the downlink results.</strong> No separate audio channel, no realtime-database
+              subscription for UI updates — one pipe. The browser streams mic (or the sample call's) audio; the
+              worker relays it to Deepgram and fans each finalized line out to three jobs in parallel.
+            </p>
+            <pre class="arch-pre">browser audio ──ws──▶ Node worker ──▶ Deepgram (streaming ASR + diarization)
+                          │
+        each final line fans out, in parallel:
+                          ├──▶ LLM ▶ running call notes
+                          ├──▶ pgvector ▶ top-k procedure docs
+                          └──▶ LLM ▶ sentiment ▶ frustration alert
+                          │
+                results ──ws──▶ the three-panel UI</pre>
+            <p>
+              Web is Next.js + Tailwind. The worker is Node + <code>ws</code>. Data is Supabase Postgres with
+              <code>pgvector</code>. It deploys as two Railway services from one monorepo, behind Cloudflare.
+              The whole thing is about 1,500 lines — and the interesting part isn't the model calls, it's the
+              plumbing around them.
+            </p>
+
+            <h2>The parts that were actually hard</h2>
+            <p>
+              <strong>Cadence, so it doesn't cost a fortune.</strong> The naive version calls an LLM on every
+              finalized sentence — expensive and jittery. Instead each job has a policy: notes regenerate only
+              after enough new lines <em>and</em> a minimum interval, fed the previous draft plus only the new
+              lines (so cost stays flat as a call runs long); retrieval de-dupes so the doc cards don't flicker;
+              sentiment runs per utterance but the alert is rate-limited. That cadence layer is most of the
+              value.
+            </p>
+            <p>
+              <strong>Retrieval that stays quiet.</strong> RAG is only useful if it says nothing when nothing's
+              relevant. Retrieval embeds a rolling window of recent lines, does a cosine top-k against the
+              corpus, and drops anything below a similarity threshold. Small talk surfaces nothing; "my
+              certificate is stuck on pending" surfaces the SSL doc within one cycle; changing topic swaps the
+              cards.
+            </p>
+            <p>
+              <strong>Two voices, cleanly separated.</strong> The sample call is a real agent-and-customer
+              dialogue. Deepgram diarization tags who's speaking, so the transcript renders chat-style — and,
+              importantly, the notes, retrieval, and sentiment analyze only the <em>customer</em>. The agent's
+              lines are context, not signal.
+            </p>
+            <p>
+              <strong>A cached replay for a free, deterministic demo.</strong> Running the live pipeline on
+              every visitor would cost money and depend on a warm speech socket. So the sample call was run
+              through the real pipeline <em>once</em>, and every event — transcript, notes, doc hits, sentiment,
+              alert, with its timing — was recorded. Clicking "play" replays that timeline in sync with the
+              audio: no re-transcription, no LLM calls, deterministic and free. The microphone path is still
+              fully live.
+            </p>
+
+            <h2>Measured latency</h2>
+            <p>
+              The number that matters for the product is <strong>transcript &rarr; sentiment ready</strong>,
+              because that's what gates the frustration alert. Measured server-side (Deepgram final receipt to
+              the sentiment score returning), it runs at a <strong>sub-second median</strong> across a call —
+              fast enough that a supervisor gets pinged while the caller is still talking. Streaming ASR and a
+              cosine scan over a small corpus are effectively instant by comparison; the LLM round-trip is the
+              slow link, and it's still comfortably under a second at the median.
+            </p>
+
+            <h2>What I'd do differently at production scale</h2>
+            <p>
+              The demo runs one worker with an in-memory rate limiter, pushing results straight over the socket.
+              That's exactly right for a portfolio piece and exactly wrong for a call center. At real scale the
+              honest version is a durable event backbone (Kafka) instead of a socket, so transcripts and derived
+              events become a stream that QA, analytics, and supervisor tooling all subscribe to; throughput and
+              graceful degradation, not happy-path latency, become the hard problem; and you need offline eval
+              sets and online guardrails so a "small" prompt change doesn't quietly wreck note quality across
+              thousands of calls. Those are the parts you can't see in a weekend demo — but they're the parts the
+              job is actually about. The demo is the shape; the scale is the work.
+            </p>
+
+            <h2>Stack</h2>
+            <p>
+              Next.js &middot; Node + <code>ws</code> &middot; Deepgram <code>nova-2</code> &middot; OpenAI
+              <code>gpt-4o-mini</code> + <code>text-embedding-3-small</code> &middot; Supabase Postgres /
+              <code>pgvector</code> &middot; Railway &middot; Cloudflare. Pair-programmed end to end with
+              <a href="https://claude.com/claude-code" target="_blank">Claude Code</a>, Anthropic's agentic
+              coding CLI. MIT-licensed — code linked below.
+            </p>
+
+            <div class="cta-row">
+              <a href="https://agentassistdemo.harrisonjansma.com" target="_blank" class="primary-btn text-uppercase">Talk into the demo</a>
+              <a href="https://github.com/harrisonjansma/harrisons-agent-assist" target="_blank" class="primary-btn btn-ghost text-uppercase">Read the source</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- start footer Area -->
+    <footer class="footer-area section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h4>About This Site</h4>
+                        <p class="footer-text">
+                            A refreshed personal site, hand-built with HTML, CSS, and JavaScript and hosted on GitHub Pages. It started as a way to learn web and back-end development, and it's grown up alongside my career.
+                        </p>
+                        <p class="footer-text">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Harrison Jansma. All rights reserved.
+<!-- Original template by Colorlib (CC BY 3.0). --></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-footer-widget footer-cta">
+                        <h4>Get in Touch</h4>
+                        <p>Open to conversations about generative AI, applied ML, and building teams that ship it.</p>
+                        <a href="mailto:harrisonjansma@gmail.com">Email me</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 social-widget">
+                    <div class="single-footer-widget">
+                        <h4>Follow Me</h4>
+                        <p>Let's be social.</p>
+                        <div class="footer-social d-flex align-items-center">
+                            <a href="https://www.linkedin.com/in/harrisonjansma" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/harrisonjansma" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+                            <a href="https://medium.com/@harrisonjansma" target="_blank" title="Medium"><i class="fa fa-medium"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer Area -->
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+      <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/jquery.tabs.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+          <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/simple-skillbar.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

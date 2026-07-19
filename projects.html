@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon-->
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="img/favicon-180.png">
+  <link rel="shortcut icon" href="img/favicon-32.png">
+  <meta name="theme-color" content="#4f46e5">
+  <!-- Author Meta -->
+  <meta name="author" content="Harrison Jansma">
+  <!-- Meta Description -->
+  <meta name="description" content="Projects by Harrison Jansma — generative-AI, real-time NLP, and applied ML systems built and shipped to production.">
+  <!-- Meta Keyword -->
+  <meta name="keywords" content="Harrison Jansma, projects, portfolio, Generative AI, LLM, RAG, NLP, credit ML">
+  <!-- meta character set -->
+  <meta charset="UTF-8">
+  <!-- Site Title -->
+  <title>Projects — Harrison Jansma</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <!--
+    CSS
+    ============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/refresh.css">
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="container main-menu">
+        <div class="row align-items-center justify-content-between d-flex">
+          <div class id="logo">
+            <a href="/"><h3>Harrison Jansma</h3></a>
+         </div>
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li><a href="/">Home</a></li>
+              <li><a href="about">About</a></li>
+              <li><a href="projects">Projects</a></li>
+              <li><a href="huckleberry">Huck</a></li>
+              <li><a href="https://www.amyjansma.com">The Wife</a> </li>
+              <li><a href="HarrisonJansmaResume.pdf" class="genric-btn primary-border circle" target="_blank">Resume</a></li>
+              </ul>
+          </nav><!-- #nav-menu-container -->
+        </div>
+      </div>
+    </header><!-- #header -->
+
+    <!-- start banner Area -->
+    <section class="about-banner">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="about-content col-lg-12">
+            <h1 class="text-white">
+              Projects
+            </h1>
+            <p class="text-white link-nav"><a href="/">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="projects"> Projects</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End banner Area -->
+
+    <!-- Projects -->
+    <section class="recent-blog-area section-gap">
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 pb-30 header-text text-center">
+            <h1>Generative AI &amp; Real-Time NLP</h1>
+            <p>Live, LLM-powered systems augmenting thousands of contact-center agents at Capital One.</p>
+          </div>
+        </div>
+
+        <!-- Featured: live, clickable demo -->
+        <div class="row justify-content-center pb-30">
+          <div class="col-lg-11">
+            <div class="work-card work-card-featured featured-split">
+              <div class="featured-copy">
+                <span class="tag"><span class="li-play" aria-hidden="true"></span>&nbsp; Live demo &middot; you can try this one</span>
+                <h4>Live Call Copilot</h4>
+                <p>
+                  A public rebuild of the shape of the systems below, running live in your browser. Talk into your
+                  mic &mdash; or play a sample call &mdash; and watch a two-voice transcript, self-drafting notes,
+                  RAG-retrieved procedure docs, and a sub-second frustration alert. Deepgram + OpenAI composed into
+                  a real-time product; no proprietary anything.
+                </p>
+                <div class="tools">
+                  <span class="pill">Next.js</span>
+                  <span class="pill">Deepgram</span>
+                  <span class="pill">OpenAI</span>
+                  <span class="pill">pgvector</span>
+                  <span class="pill">Railway</span>
+                </div>
+                <div class="hero-btns" style="margin-top:22px;">
+                  <a href="https://agentassistdemo.harrisonjansma.com" target="_blank" class="primary-btn text-uppercase mb-20">Try the live demo</a>
+                  <a href="call-copilot" class="primary-btn btn-ghost text-uppercase mb-20">Read the write-up</a>
+                </div>
+              </div>
+              <a class="featured-media" href="call-copilot" aria-label="Read the Live Call Copilot write-up">
+                <img src="img/call-copilot.png" alt="Live Call Copilot demo — two-voice transcript, self-drafting notes, RAG procedure docs, and a frustration alert">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 single-recent-blog">
+            <div class="work-card">
+              <span class="tag">Generative AI</span>
+              <h4 id="summarization"><a class="card-title-link" href="summarization">Real-Time Call Summarization</a></h4>
+              <p>An agentic GPT reasoning pipeline on Kafka that auto-drafts servicing-agent notes mid-call, with an LLM "agent-as-a-judge" review stage before anything reaches the agent.</p>
+              <div class="tools">
+                <span class="pill">GPT-4</span>
+                <span class="pill">Kafka</span>
+                <span class="pill">Python</span>
+                <span class="pill">AWS Lambda</span>
+              </div>
+              <div class="metric">
+                <div><b>Real-time</b><span>Mid-call notes</span></div>
+                <div><b>Agentic</b><span>Draft + review</span></div>
+                <div><b>In pilot</b><span>Governed rollout</span></div>
+              </div>
+            <a class="card-link" href="summarization">Read the write-up &rarr;</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 single-recent-blog">
+            <div class="work-card">
+              <span class="tag">Retrieval &middot; RAG</span>
+              <h4 id="rag"><a class="card-title-link" href="rag">Live Procedure RAG</a></h4>
+              <p>A retrieval-augmented generation system that runs vector-embedding retrieval over live call transcripts to surface the right procedure and training documents to agents in real time.</p>
+              <div class="tools">
+                <span class="pill">RAG</span>
+                <span class="pill">pgvector</span>
+                <span class="pill">Embeddings</span>
+                <span class="pill">Python</span>
+              </div>
+              <div class="metric">
+                <div><b>Real-time</b><span>Mid-conversation</span></div>
+                <div><b>Vector search</b><span>Procedure docs</span></div>
+              </div>
+            <a class="card-link" href="rag">Read the write-up &rarr;</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 single-recent-blog">
+            <div class="work-card">
+              <span class="tag">Real-Time NLP</span>
+              <h4 id="complaint"><a class="card-title-link" href="complaint">LLM Complaint Detection</a></h4>
+              <p>An LLM system that detects and categorizes customer complaints on live transcripts and flags escalations — lifting complaint capture sharply over a legacy frustration-phrase flag, at high precision. Earned an internal excellence award; pilot planned for 2026.</p>
+              <div class="tools">
+                <span class="pill">LLMs</span>
+                <span class="pill">Prompt Eval</span>
+                <span class="pill">Python</span>
+              </div>
+              <div class="metric">
+                <div><b>GenAI</b><span>Complaint capture</span></div>
+                <div><b>High precision</b><span>vs legacy flag</span></div>
+              </div>
+            <a class="card-link" href="complaint">Read the write-up &rarr;</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 single-recent-blog">
+            <div class="work-card">
+              <span class="tag">Real-Time NLP</span>
+              <h4 id="sentiment"><a class="card-title-link" href="sentiment">Frustrated-Customer Alerting</a></h4>
+              <p>Capital One's first real-time AI alert system — streaming DistilBERT and LLM sentiment over live calls at scale, alerting managers to de-escalate in real time.</p>
+              <div class="tools">
+                <span class="pill">DistilBERT</span>
+                <span class="pill">PyTorch</span>
+                <span class="pill">Kafka</span>
+                <span class="pill">DynamoDB</span>
+              </div>
+              <div class="metric">
+                <div><b>Real-time</b><span>Live alerting</span></div>
+                <div><b>At scale</b><span>Across the business</span></div>
+                <div><b>Streaming</b><span>Real-time pipeline</span></div>
+              </div>
+            <a class="card-link" href="sentiment">Read the write-up &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="mt-20 mb-20">
+
+        <div class="row justify-content-center pt-40">
+          <div class="col-md-8 pb-30 header-text text-center">
+            <h1>Applied ML &amp; Credit Risk</h1>
+            <p>Models that decision loans at large scale in auto lending.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 single-recent-blog">
+            <div class="work-card">
+              <span class="tag">Credit ML</span>
+              <h4 id="underwriting"><a class="card-title-link" href="underwriting">Auto-Loan Underwriting ML Suite</a></h4>
+              <p>Engineered and maintained the machine-learning suite behind Capital One's auto-loan underwriting, finding signal in credit characteristics tied to loan performance to decision loans at large scale.</p>
+              <div class="tools">
+                <span class="pill">Python</span>
+                <span class="pill">XGBoost</span>
+                <span class="pill">scikit-learn</span>
+                <span class="pill">Snowflake</span>
+              </div>
+              <div class="metric">
+                <div><b>Production ML</b><span>Credit risk</span></div>
+                <div><b>Regulated</b><span>High-volume</span></div>
+              </div>
+            <a class="card-link" href="underwriting">Read the write-up &rarr;</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 single-recent-blog">
+            <div class="work-card">
+              <span class="tag">Reinforcement Learning</span>
+              <h4 id="credit-policy"><a class="card-title-link" href="credit-policy">Credit-Policy Simulation Engine</a></h4>
+              <p>Built a simulation engine that generates synthetic loan applications to power a reinforcement-learning task that optimizes credit policy — testing decisions before they ever touch a real applicant.</p>
+              <div class="tools">
+                <span class="pill">Reinforcement Learning</span>
+                <span class="pill">Python</span>
+                <span class="pill">Simulation</span>
+              </div>
+              <div class="metric">
+                <div><b>RL</b><span>Policy optimization</span></div>
+                <div><b>Synthetic</b><span>Application simulation</span></div>
+              </div>
+            <a class="card-link" href="credit-policy">Read the write-up &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="mt-20 mb-20">
+
+        <div class="row justify-content-center pt-40">
+          <div class="col-md-8 pb-30 header-text text-center">
+            <h1>Earlier Work</h1>
+            <p>Where I sharpened the fundamentals — research, big data, and NLP.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 single-recent-blog">
+            <div class="work-card">
+              <span class="tag">Anomaly Detection &middot; Sprint</span>
+              <h4 id="anomaly"><a class="card-title-link" href="anomaly">Billing-Failure Anomaly Detection</a></h4>
+              <p>Designed a novel model-training framework for anomaly detection on customer billing data, and built Hive and PySpark pipelines aggregating millions of records. The framework drove a 5x increase in the types of billing failure the system could detect — earning the only extension across an 80+ intern class.</p>
+              <div class="tools">
+                <span class="pill">PySpark</span>
+                <span class="pill">Hive</span>
+                <span class="pill">Python</span>
+                <span class="pill">Anomaly Detection</span>
+              </div>
+              <div class="metric">
+                <div><b>5x</b><span>Detectable failure types</span></div>
+                <div><b>Millions</b><span>Records aggregated</span></div>
+              </div>
+            <a class="card-link" href="anomaly">Read the write-up &rarr;</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 single-recent-blog">
+            <div class="work-card">
+              <span class="tag">NLP Research &middot; UPenn</span>
+              <h4 id="emotion"><a class="card-title-link" href="emotion">Population-Scale Emotion Classification</a></h4>
+              <p>Partnered with University of Pennsylvania sociologists on a long-term, population-level NLP study — building an emotion-classification model and designing Python scrapers over millions of public social-media profiles to measure population-wide shifts in emotional state following major political events.</p>
+              <div class="tools">
+                <span class="pill">Python</span>
+                <span class="pill">scikit-learn</span>
+                <span class="pill">NLTK</span>
+                <span class="pill">Web Scraping</span>
+              </div>
+              <div class="metric">
+                <div><b>Millions</b><span>Profiles processed</span></div>
+                <div><b>Research</b><span>Sociology study</span></div>
+              </div>
+            <a class="card-link" href="emotion">Read the write-up &rarr;</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 single-recent-blog">
+            <div class="work-card">
+              <span class="tag">Teaching &middot; General Assembly</span>
+              <h4 id="teaching"><a class="card-title-link" href="teaching">Data Science Instruction</a></h4>
+              <p>Taught core data-science concepts on-site at Intuit through General Assembly — leading courses for software and data engineers during graduate study, translating dense statistical ideas into practical intuition they could apply on the job.</p>
+              <div class="tools">
+                <span class="pill">Python</span>
+                <span class="pill">pandas</span>
+                <span class="pill">scikit-learn</span>
+                <span class="pill">Jupyter</span>
+              </div>
+              <div class="metric">
+                <div><b>Intuit</b><span>On-site cohort</span></div>
+                <div><b>Core DS</b><span>For engineers</span></div>
+              </div>
+            <a class="card-link" href="teaching">Read the write-up &rarr;</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 single-recent-blog">
+            <div class="work-card">
+              <span class="tag">NLP &middot; Writing</span>
+              <h4 id="writing"><a class="card-title-link" href="writing">Self-Taught Projects &amp; Technical Writing</a></h4>
+              <p>Taught myself the field in the open — unsupervised LDA topic modelling that isolated toxic Wikipedia comments into their own cluster, KMeans/agglomerative clustering on survey data, and widely-read data-science writing on freeCodeCamp and Towards Data Science.</p>
+              <div class="tools">
+                <span class="pill">LDA</span>
+                <span class="pill">scikit-learn</span>
+                <span class="pill">KMeans</span>
+                <span class="pill">Medium</span>
+              </div>
+              <div class="metric">
+                <div><b>2 articles</b><span>freeCodeCamp &middot; TDS</span></div>
+                <div><b>LDA &middot; NLP</b><span>Topic modelling</span></div>
+              </div>
+            <a class="card-link" href="writing">Read the write-up &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center mt-40">
+          <p class="mb-20" style="color:var(--muted);">Want the full detail, with dates and stack?</p>
+          <a href="HarrisonJansmaResume.pdf" target="_blank" class="primary-btn text-uppercase">View my résumé</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- start footer Area -->
+<footer class="footer-area section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4>About This Site</h4>
+                    <p class="footer-text">
+                        A refreshed personal site, hand-built with HTML, CSS, and JavaScript and hosted on GitHub Pages. It started as a way to learn web and back-end development, and it's grown up alongside my career.
+                    </p>
+                    <p class="footer-text">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Harrison Jansma. All rights reserved.
+<!-- Original template by Colorlib (CC BY 3.0). --></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-footer-widget footer-cta">
+                    <h4>Get in Touch</h4>
+                    <p>Open to conversations about generative AI, applied ML, and building teams that ship it.</p>
+                    <a href="mailto:harrisonjansma@gmail.com">Email me</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 social-widget">
+                <div class="single-footer-widget">
+                    <h4>Follow Me</h4>
+                    <p>Let's be social.</p>
+                    <div class="footer-social d-flex align-items-center">
+                        <a href="https://www.linkedin.com/in/harrisonjansma" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/harrisonjansma" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+                        <a href="https://medium.com/@harrisonjansma" target="_blank" title="Medium"><i class="fa fa-medium"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End footer Area -->
+
+    			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+    			<script src="js/popper.min.js"></script>
+    			<script src="js/vendor/bootstrap.min.js"></script>
+      			<script src="js/easing.min.js"></script>
+    			<script src="js/hoverIntent.js"></script>
+    			<script src="js/superfish.min.js"></script>
+    			<script src="js/jquery.magnific-popup.min.js"></script>
+        		<script src="js/jquery.tabs.min.js"></script>
+    			<script src="js/jquery.nice-select.min.js"></script>
+                <script src="js/isotope.pkgd.min.js"></script>
+    			<script src="js/waypoints.min.js"></script>
+    			<script src="js/jquery.counterup.min.js"></script>
+    			<script src="js/simple-skillbar.js"></script>
+    			<script src="js/owl.carousel.min.js"></script>
+    			<script src="js/main.js"></script>
+    		</body>
+    	</html>

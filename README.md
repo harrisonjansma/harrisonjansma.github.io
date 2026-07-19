@@ -1,13 +1,30 @@
-# harrisonjansma.com
+# harrisonjansma.github.io
 
-This repository contains the code for my portfolio website, www.harrisonjansma.com The original html, css, and php were acquired from a free Colorlib theme found <a href="https://colorlib.com/wp/template/personal/">here</a>. It was a lot of fun tweaking the HTML to make the template my own. I learned a lot about HTML and CSS in the process of making this site.
+Source for my personal website, **[harrisonjansma.com](https://harrisonjansma.com)**.
 
-## Things I learned:
-#### 1. Basic HTML and CSS manipulation. 
-You would be suprised at how often knowing this has come in handy. Web scraping is easier. And my Jupyter write-ups look much more put together. (Who knew you could integrate HTML and CSS into your notebook code to make your write-ups pretty?)
+A static site — hand-written HTML, CSS, and a little JavaScript — hosted on
+GitHub Pages. It presents who I am and the work I've shipped as a Machine
+Learning Engineer and Data Science Manager working in generative AI.
 
-#### 2. Basic backend setup and deployment.
- I deployed the website on DigitalOcean through an Apache server. I learned about server management, security, and the HTTP protocol.
+## Structure
 
-#### 3. Importance of aesthetics to presenting your ideas.
- Building a platform for displaying my work has made me reflect about my target audience. Going forward, I only aim to produce the highest quality write-ups, that are inherently interesting and useful.
+| Page | File | Purpose |
+| --- | --- | --- |
+| Home | `index.html` | Intro, focus areas, skills, and selected work |
+| About | `about.html` | Background, career timeline, and FAQ |
+| Projects | `archive.html` | Project cards across GenAI, credit ML, and earlier work |
+| Huck | `huckleberry.html` | Photos of the best dog in the world |
+
+Styling starts from a [Colorlib](https://colorlib.com/wp/template/personal/)
+"Personal" template (`css/main.css`, CC BY 3.0) with a modernization layer
+layered on top in **`css/refresh.css`** — updated typography, color, and
+component polish without rebuilding the underlying markup.
+
+## Local preview
+
+It's fully static, so any static file server works:
+
+```bash
+python3 -m http.server 8000
+# then open http://localhost:8000
+```

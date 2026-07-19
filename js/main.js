@@ -1,6 +1,22 @@
 $(document).ready(function() {
     "use strict";
 
+    //------- Active nav highlight (current page) --------//
+    (function(){
+      var slug = (location.pathname.replace(/\/+$/,'').split('/').pop() || '').toLowerCase().replace(/\.html$/,'');
+      if(slug === 'index') slug = '';
+      var projectPages = ['projects','archive','portfolio','call-copilot','summarization','rag',
+        'complaint','sentiment','underwriting','credit-policy','anomaly','emotion','teaching','writing'];
+      function norm(h){ return (h||'').replace(/^\//,'').replace(/\/+$/,'').replace(/\.html$/,'').toLowerCase(); }
+      document.querySelectorAll('.nav-menu > li > a').forEach(function(a){
+        if(a.classList.contains('primary-border')) return;
+        var href = norm(a.getAttribute('href'));
+        var active = (href === '' && slug === '')
+          || (href !== '' && href === slug)
+          || (href === 'projects' && projectPages.indexOf(slug) > -1);
+        if(active){ a.parentElement.classList.add('menu-active'); }
+      });
+    })();
 
     //------- Niceselect  js --------//
 
@@ -68,33 +84,34 @@ $(document).ready(function() {
       };
 
 
-    //------- Timeline js --------//
+    //------- Timeline reveal-on-scroll (IntersectionObserver) --------//
 
+    (function(){
+      var items = document.querySelectorAll('.timeline .content, .reveal-token');
+      if(!items.length){ return; }
 
-    $('.content').each( function(i){
-
-      var bottom_of_object= $(this).offset().top + $(this).outerHeight();
-      var bottom_of_window = $(window).height();
-
-      if( bottom_of_object > bottom_of_window){
-        $(this).addClass('hidden');
+      // Without IntersectionObserver, leave everything in its visible default.
+      if(!('IntersectionObserver' in window)){
+        items.forEach(function(el){ el.classList.add('in-view'); });
+        return;
       }
-    });
 
+      // Arm the hidden→revealed transition only when we can observe scroll.
+      var tl = document.querySelector('.timeline');
+      if(tl){ tl.classList.add('reveal-on'); }
+      document.documentElement.classList.add('tl-reveal-armed');
 
-    $(window).scroll( function(){
-        /* Check the location of each element hidden */
-        $('.hidden').each( function(i){
-
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            /* If the object is completely visible in the window, fadeIn it */
-            if( bottom_of_window > bottom_of_object ){
-              $(this).animate({'opacity':'1'},700);
-            }
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.isIntersecting){
+            e.target.classList.add('in-view');
+            io.unobserve(e.target);
+          }
         });
-    });
+      }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+
+      items.forEach(function(el){ io.observe(el); });
+    })();
 
 
     //------- Superfish nav menu  js --------//

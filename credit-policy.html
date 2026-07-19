@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon-->
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="img/favicon-180.png">
+  <link rel="shortcut icon" href="img/favicon-32.png">
+  <meta name="theme-color" content="#4f46e5">
+  <meta name="author" content="Harrison Jansma">
+  <meta name="description" content="A simulation engine that generates synthetic loan applications to power a reinforcement-learning task optimizing credit policy — testing decisions before they touch a real applicant.">
+  <meta charset="UTF-8">
+  <title>Credit-Policy Simulation (RL) — Harrison Jansma</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/refresh.css">
+
+    <style>
+      .post-body { padding-top: 46px; padding-bottom: 60px; }
+      .post-body h2 { font-family: 'Space Grotesk', sans-serif; margin-top: 40px; margin-bottom: 14px; }
+      .post-body h2:first-of-type { margin-top: 0; }
+      .post-body p { font-size: 16px; line-height: 1.8; margin-bottom: 18px; color: var(--muted, #4b5563); }
+      .post-body ul { margin-bottom: 20px; padding-left: 20px; }
+      .post-body li { font-size: 16px; line-height: 1.7; margin-bottom: 8px; color: var(--muted, #4b5563); }
+      .post-body a { text-decoration: underline; text-underline-offset: 2px; }
+      .kicker { text-transform: uppercase; letter-spacing: .16em; font-size: 12px; font-weight: 700; color: #6366f1; margin-bottom: 8px; }
+      .lede { font-size: 19px !important; line-height: 1.7 !important; color: #1f2937 !important; }
+      .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin: 28px 0 6px; }
+      .post-body code { background: rgba(99,102,241,.08); border-radius: 5px; padding: 1px 6px; font-size: 14px; }
+      .disclaimer { font-size: 14px; line-height: 1.6; color: #5b6373; background: rgba(99,102,241,.06);
+        border: 1px solid rgba(99,102,241,.16); border-left: 3px solid #6366f1; border-radius: 10px;
+        padding: 14px 18px; margin: 22px 0 4px; }
+      .metric-strip { display: flex; flex-wrap: wrap; gap: 30px; margin: 24px 0 6px; padding: 20px 0; border-top: 1px solid var(--line, #e8eaf2); border-bottom: 1px solid var(--line, #e8eaf2); }
+      .metric-strip div b { font-family: 'Space Grotesk', sans-serif; display: block; font-size: 1.5rem; color: var(--ink, #171a26); line-height: 1.1; }
+      .metric-strip div span { font-size: .8rem; color: var(--muted, #6b7385); }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container main-menu">
+        <div class="row align-items-center justify-content-between d-flex">
+          <div class id="logo"><a href="/"><h3>Harrison Jansma</h3></a></div>
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li><a href="/">Home</a></li>
+              <li><a href="about">About</a></li>
+              <li><a href="projects">Projects</a></li>
+              <li><a href="huckleberry">Huck</a></li>
+              <li><a href="https://www.amyjansma.com">The Wife</a> </li>
+              <li><a href="HarrisonJansmaResume.pdf" class="genric-btn primary-border circle" target="_blank">Resume</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="about-banner">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="about-content col-lg-12">
+            <h1 class="text-white">Credit-Policy Simulation (RL)</h1>
+            <p class="text-white link-nav"><a href="/">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="projects"> Projects</a>  <span class="lnr lnr-arrow-right"></span>  Credit-Policy Simulation (RL)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="post-body">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <p class="kicker">Reinforcement learning &middot; Credit risk &middot; Capital One</p>
+            <p class="lede">You can't experiment with credit policy on real applicants &mdash; so I built a simulation engine that generates synthetic loan applications to power a reinforcement-learning task that optimizes policy offline.</p>
+            <p class="disclaimer">This is a deliberately high-level account of proprietary work at Capital One &mdash; the problem, my role, and the approach, described qualitatively. It contains no confidential figures, internal systems, data, models, code, vendor or team names, or architecture.</p>
+            <div class="metric-strip"><div><b>RL</b><span>Policy optimization</span></div><div><b>Synthetic</b><span>Application simulation</span></div></div>
+            <h2>The idea</h2>
+            <p>Credit policy is a sequential decision problem well suited to reinforcement learning &mdash; but the one thing you cannot do is learn on live applicants. The way through is a faithful simulator: generate synthetic applications, let an RL agent optimize policy against them, and evaluate decisions before any of them touch a real person.</p>
+            <h2>What I built</h2>
+            <p>A simulation engine that produces synthetic loan applications, and the reinforcement-learning task that optimizes credit policy against that simulated population &mdash; a safe, offline testbed for policy decisions.</p>
+            <h2>What it demonstrates</h2>
+            <p>Applying reinforcement learning and simulation to a safety-critical decision system: getting the benefits of learned policy optimization while keeping experimentation entirely off real customers.</p>
+
+            <div class="cta-row">
+              <a href="projects" class="primary-btn text-uppercase">&larr; All projects</a>
+              <a href="HarrisonJansmaResume.pdf" target="_blank" class="primary-btn btn-ghost text-uppercase">Résumé</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-area section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h4>About This Site</h4>
+                        <p class="footer-text">A refreshed personal site, hand-built with HTML, CSS, and JavaScript and hosted on GitHub Pages. It started as a way to learn web and back-end development, and it's grown up alongside my career.</p>
+                        <p class="footer-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Harrison Jansma. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-footer-widget footer-cta">
+                        <h4>Get in Touch</h4>
+                        <p>Open to conversations about generative AI, applied ML, and building teams that ship it.</p>
+                        <a href="mailto:harrisonjansma@gmail.com">Email me</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 social-widget">
+                    <div class="single-footer-widget">
+                        <h4>Follow Me</h4>
+                        <p>Let's be social.</p>
+                        <div class="footer-social d-flex align-items-center">
+                            <a href="https://www.linkedin.com/in/harrisonjansma" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/harrisonjansma" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+                            <a href="https://medium.com/@harrisonjansma" target="_blank" title="Medium"><i class="fa fa-medium"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.tabs.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/simple-skillbar.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,609 @@
+/*==============================================================
+  refresh.css — 2026 modernization layer
+  Loaded LAST, on top of the original Colorlib theme (main.css).
+  Refines typography, color, spacing, and component polish without
+  changing the underlying layout/structure.
+==============================================================*/
+
+:root{
+  --ink:      #171a26;   /* primary text            */
+  --ink-soft: #4a5163;   /* secondary text          */
+  --muted:    #6b7385;   /* muted / meta            */
+  --line:     #e8eaf2;   /* hairline borders        */
+  --bg:       #ffffff;
+  --bg-tint:  #f7f8fc;   /* section backgrounds     */
+  --accent:   #4f46e5;   /* indigo                  */
+  --accent-2: #7c3aed;   /* violet                  */
+  --accent-ink:#3730a3;
+  --grad: linear-gradient(120deg, #4f46e5 0%, #7c3aed 100%);
+  --shadow-sm: 0 1px 2px rgba(23,26,38,.06), 0 2px 8px rgba(23,26,38,.05);
+  --shadow-md: 0 10px 30px -12px rgba(23,26,38,.22);
+  --shadow-lg: 0 24px 60px -20px rgba(79,70,229,.35);
+}
+
+/*----------------------  Typography  ----------------------*/
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif !important;
+  color:var(--ink-soft);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-size:16px;
+  line-height:1.7;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif !important;
+  color:var(--ink);
+  letter-spacing:-.02em;
+  font-weight:700;
+}
+.banner-left h2,
+.about-content h1,
+.title h1,
+.header-text h1,
+.personal-details h1{
+  font-family:'Space Grotesk','Inter',sans-serif !important;
+  letter-spacing:-.03em;
+  font-weight:700;
+}
+p{ color:var(--ink-soft); }
+a{ transition:color .2s ease; }
+a:hover{ color:var(--accent); }
+::selection{ background:rgba(79,70,229,.16); }
+
+/*----------------------  Header / Nav  ----------------------*/
+#header{
+  position:sticky; top:0; z-index:999;
+  background:rgba(255,255,255,.7);
+  -webkit-backdrop-filter:saturate(180%) blur(16px);
+  backdrop-filter:saturate(180%) blur(16px);
+  border-bottom:1px solid rgba(23,26,38,.06);
+  padding:12px 0;
+  transition:padding .25s ease, background .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+/* Compact, shadowed state once the page scrolls (class toggled by main.js) */
+#header.header-scrolled{
+  background:rgba(255,255,255,.9);
+  box-shadow:0 8px 28px -14px rgba(23,26,38,.28);
+  border-bottom-color:transparent;
+  padding:6px 0;
+}
+/* Brand mark: the favicon H before the wordmark — pure CSS, no per-page markup */
+#header #logo a{ display:inline-flex; align-items:center; gap:11px; text-decoration:none; }
+#header #logo a::before{
+  content:''; width:32px; height:32px; flex:0 0 32px;
+  background:url(../img/favicon.svg) center/contain no-repeat;
+  border-radius:9px; box-shadow:0 5px 14px -5px rgba(79,70,229,.55);
+  transition:transform .3s cubic-bezier(.34,1.4,.5,1);
+}
+#header #logo a:hover::before{ transform:rotate(-8deg) scale(1.06); }
+#header #logo h3{
+  font-family:'Space Grotesk','Inter',sans-serif !important;
+  font-weight:700; color:var(--ink); margin:0; letter-spacing:-.02em; font-size:1.32rem;
+  transition:color .2s ease;
+}
+#header #logo a:hover h3{ color:var(--accent); }
+.nav-menu li a{
+  color:var(--ink-soft) !important;
+  font-weight:500; font-size:15px;
+  position:relative; transition:color .2s ease;
+}
+/* Animated gradient underline on hover / active page */
+.nav-menu > li > a:not(.primary-border)::after{
+  content:''; position:absolute; left:2px; right:2px; bottom:0; height:2px;
+  background:var(--grad); border-radius:2px;
+  transform:scaleX(0); transform-origin:left;
+  transition:transform .28s cubic-bezier(.4,0,.2,1);
+}
+.nav-menu > li > a:not(.primary-border):hover::after,
+.nav-menu > li.menu-active > a:not(.primary-border)::after{ transform:scaleX(1); }
+.nav-menu li a:hover,
+.nav-menu li.menu-active a{ color:var(--accent) !important; }
+.nav-menu > li.menu-active > a{ font-weight:600; }
+.nav-menu > li > a.primary-border{
+  background:var(--grad) !important;
+  color:#fff !important;
+  border:none !important;
+  padding:9px 22px !important;
+  border-radius:999px !important;
+  box-shadow:0 6px 18px -6px rgba(79,70,229,.6);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.nav-menu > li > a.primary-border:hover{
+  color:#fff !important;
+  transform:translateY(-1px);
+  box-shadow:0 12px 26px -8px rgba(79,70,229,.75);
+}
+
+/* Mobile nav: the theme's fixed toggle/panel share z-index 999 with the
+   sticky header, which paints later and buries them — lift them above it */
+#mobile-nav-toggle{
+  z-index:1002;
+  top:18px;
+  right:14px;
+  width:44px; height:44px;
+  border-radius:12px;
+  background:rgba(79,70,229,.10);
+}
+#mobile-nav-toggle i{ color:var(--ink); font-size:22px; line-height:44px; }
+body.mobile-nav-active #mobile-nav-toggle i{ color:#fff; }
+#mobile-nav{ z-index:1001; background:rgba(18,20,31,.97); }
+#mobile-body-overly{ z-index:1000; }
+#mobile-nav ul li a{ color:#e8eaf2; }
+#mobile-nav ul li a:hover{ color:#fff; }
+
+/*----------------------  Buttons  ----------------------*/
+.primary-btn,
+.banner-left .primary-btn,
+.home-about-right .primary-btn,
+.portfolio-area .primary-btn{
+  background:var(--grad) !important;
+  border-radius:999px !important;
+  font-weight:600 !important;
+  letter-spacing:.01em;
+  box-shadow:0 8px 22px -8px rgba(79,70,229,.55);
+  transition:transform .2s ease, box-shadow .2s ease !important;
+  text-transform:none !important;
+}
+.primary-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 14px 30px -10px rgba(79,70,229,.65) !important;
+}
+.primary-btn.btn-ghost{
+  background:transparent !important;
+  color:var(--accent) !important;
+  border:1.5px solid var(--line) !important;
+  box-shadow:none;
+}
+.primary-btn.btn-ghost:hover{
+  border-color:var(--accent) !important;
+  color:var(--accent) !important;
+}
+
+/*----------------------  Gradient surfaces  ----------------------*/
+.p1-gradient-bg,
+.about-banner,
+.facts-area,
+.brands-area{
+  background:var(--grad) !important;
+}
+.about-banner{ padding:70px 0 44px; }
+.about-banner h1{ color:#fff !important; letter-spacing:-.03em; }
+/* The theme's .about-content adds margin-top:70px + padding:90px 0 on top of the
+   banner's own padding — collapse it so the banner isn't a full screen tall. */
+.about-banner .about-content{ margin-top:0 !important; padding:0 !important; }
+@media (max-width:767px){
+  .about-banner{ padding:44px 0 34px; }
+  .about-content h1{ font-size:38px; }
+}
+
+/*----------------------  Hero  ----------------------*/
+.banner-area{ background:var(--bg-tint); }
+.banner-left h5{
+  color:var(--accent) !important;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-weight:600;
+  font-size:13px;
+}
+.banner-left h2{ color:var(--ink); font-size:3.1rem; line-height:1.08; }
+.banner-left p{ font-size:1.12rem; color:var(--ink-soft); max-width:34ch; }
+.banner-right img{
+  border-radius:18px;
+  box-shadow:var(--shadow-md);
+}
+
+/* Hero quick-stats strip */
+.hero-stats{ display:flex; gap:38px; margin:26px 0 30px; flex-wrap:wrap; }
+.hero-stats .num{
+  font-family:'Space Grotesk','Inter',sans-serif;
+  font-size:1.7rem; font-weight:700; color:var(--ink);
+  background:var(--grad); -webkit-background-clip:text; background-clip:text;
+  -webkit-text-fill-color:transparent; line-height:1;
+}
+.hero-stats .lbl{ font-size:.8rem; color:var(--muted); margin-top:6px; display:block; letter-spacing:.01em; }
+.hero-btns{ display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+
+/*----------------------  Section rhythm & titles  ----------------------*/
+.section-gap{ padding:56px 0; }
+.title h1, .header-text h1{ font-size:2.15rem; margin-bottom:10px; }
+.title p, .header-text p{ color:var(--muted); font-size:1.02rem; margin-bottom:0; }
+.section-tint{ background:var(--bg-tint); }
+hr{ border:0; border-top:1px solid var(--line); margin:0; }
+
+.personal-details h1{ font-size:2.15rem; }
+.generic-blockquote{
+  background:var(--bg-tint) !important;
+  border-left:3px solid var(--accent) !important;
+  border-radius:0 12px 12px 0;
+  padding:26px 30px !important;
+  color:var(--ink-soft);
+}
+.generic-blockquote p{ font-size:1.02rem !important; }
+
+/*----------------------  "Areas of Interest" cards  ----------------------*/
+.single-services{
+  background:var(--bg);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:34px 28px !important;
+  box-shadow:var(--shadow-sm);
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  /* margin lives on the same axis as height:100%, so subtract it —
+     otherwise flex columns inflate the card by its own margins */
+  margin-top:0 !important;
+  margin-bottom:30px;
+  height:calc(100% - 30px);
+}
+.single-services:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow-md);
+  border-color:#d7d9ec;
+}
+.single-services .lnr{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:52px; height:52px; border-radius:13px;
+  background:rgba(79,70,229,.10);
+  color:var(--accent) !important;
+  font-size:24px; margin-bottom:18px;
+  -webkit-text-fill-color:var(--accent);
+}
+.single-services:hover .lnr{ background:var(--grad); color:#fff !important; -webkit-text-fill-color:#fff; }
+.single-services h4{ font-size:1.15rem; margin-bottom:10px; }
+.single-services p{ font-size:.96rem; color:var(--muted); }
+
+/*----------------------  Skill bars  ----------------------*/
+.skillbar-wraps h4{ font-size:1.15rem; }
+.single-skill p{ font-size:.92rem !important; color:var(--ink-soft); margin-bottom:8px; font-weight:500; }
+.single-skill .skill{
+  background:#eceeffb0 !important;
+  border-radius:99px; height:9px; overflow:hidden;
+}
+.single-skill .sb_bar{
+  background:var(--grad) !important;
+  border-radius:99px; height:9px;
+}
+
+/*----------------------  Selected Work cards (home)  ----------------------*/
+.single-recent-blog{ margin-bottom:30px; }
+.work-card{
+  background:var(--bg);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:22px 24px;
+  height:100%;
+  box-shadow:var(--shadow-sm);
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  display:flex; flex-direction:column;
+}
+.work-card:hover{ transform:translateY(-5px); box-shadow:var(--shadow-md); border-color:#d7d9ec; }
+/* Featured "live demo" card — highlighted so the interactive demo stands out */
+.work-card-featured{
+  border-color:rgba(99,102,241,.35);
+  background:linear-gradient(180deg,rgba(99,102,241,.07),rgba(124,58,237,.02));
+  box-shadow:var(--shadow-md);
+}
+.work-card-featured:hover{ border-color:rgba(99,102,241,.5); box-shadow:var(--shadow-lg); }
+.work-card.work-card-featured .tag{ background:var(--grad); color:#fff; }
+.work-card.work-card-featured h4{ font-size:1.5rem; }
+.work-card.work-card-featured{ text-align:left; }
+.work-card-featured .featured-copy > p{ font-size:1rem; color:var(--ink-soft); text-align:left; margin-bottom:14px; }
+/* Two-column featured card: copy on the left, demo screenshot on the right */
+.work-card-featured.featured-split{ flex-direction:row; align-items:center; gap:36px; }
+.featured-split .featured-copy{ flex:1 1 52%; min-width:0; }
+.featured-split .featured-copy .hero-btns{ margin-bottom:0; }
+.featured-media{
+  flex:1 1 48%; display:block; align-self:center;
+  border-radius:14px; overflow:hidden; border:1px solid rgba(15,23,42,.08);
+  box-shadow:0 18px 44px -22px rgba(15,23,42,.5);
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+.featured-media img{ display:block; width:100%; height:auto; }
+.featured-media:hover{ transform:translateY(-3px); box-shadow:0 26px 56px -20px rgba(79,70,229,.5); }
+@media (max-width:900px){
+  .work-card-featured.featured-split{ flex-direction:column; align-items:stretch; gap:22px; }
+  .featured-media{ order:-1; }
+}
+.work-card .tag{
+  display:inline-block; font-size:.72rem; font-weight:600; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--accent);
+  background:rgba(79,70,229,.09); padding:5px 12px; border-radius:99px; margin-bottom:11px;
+  align-self:flex-start;
+}
+.work-card h4{ font-size:1.15rem; margin-bottom:8px; line-height:1.28; }
+.card-title-link{ color:var(--ink) !important; text-decoration:none; }
+.card-title-link:hover{ color:var(--accent) !important; }
+.card-link{
+  display:inline-block; margin-top:12px; font-size:.85rem; font-weight:600;
+  color:var(--accent) !important; text-decoration:none; letter-spacing:.01em;
+  transition:transform .2s ease;
+}
+.card-link:hover{ color:var(--accent-ink) !important; transform:translateX(3px); }
+.work-card p{ font-size:.93rem; color:var(--muted); margin-bottom:12px; line-height:1.6; }
+.work-card .metric{
+  margin-top:auto; display:flex; gap:14px 18px; flex-wrap:wrap;
+  border-top:1px solid var(--line); padding-top:13px;
+}
+.work-card .metric b{
+  font-family:'Space Grotesk','Inter',sans-serif; display:block; font-size:1.08rem; color:var(--ink); line-height:1.2;
+}
+.work-card .metric span{ font-size:.72rem; color:var(--muted); }
+
+/*----------------------  "Other Platforms" cards  ----------------------*/
+.single-price{
+  border:1px solid var(--line) !important;
+  border-radius:18px !important;
+  box-shadow:var(--shadow-sm);
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  padding:20px !important;
+}
+.single-price:hover{ transform:translateY(-4px); box-shadow:var(--shadow-md); border-color:#d7d9ec; }
+.single-price .top-part img{ border-radius:14px; }
+.single-price h4{ margin-top:14px; }
+.platform-grid .p-icon{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:66px; height:66px; border-radius:18px; margin:6px auto 4px;
+  background:rgba(79,70,229,.10); color:var(--accent); font-size:30px;
+  transition:background .25s ease, color .25s ease;
+}
+.platform-grid .p-icon .fa{ color:inherit; }
+.platform-grid .single-price:hover .p-icon{ background:var(--grad); color:#fff; }
+
+/*----------------------  Timeline (about)  ----------------------*/
+/* Default: fully visible (no-JS fallback). When main.js confirms support it
+   adds .reveal-on to the timeline, which arms the hidden→revealed transition. */
+.timeline ul li .content{ opacity:1; }
+.timeline.reveal-on ul li .content{
+  opacity:0;
+  transform:translateY(34px) scale(.98);
+  transition:opacity .7s cubic-bezier(.22,.7,.2,1), transform .7s cubic-bezier(.22,.7,.2,1);
+  will-change:opacity, transform;
+}
+.timeline.reveal-on ul li:nth-child(even) .content{ transform:translateY(34px) scale(.98); }
+.timeline.reveal-on ul li .content.in-view{ opacity:1; transform:none; }
+@media (prefers-reduced-motion: reduce){
+  .timeline.reveal-on ul li .content{ opacity:1 !important; transform:none !important; transition:none; }
+}
+.timeline ul li{ background:var(--line); }
+.timeline ul li:nth-child(odd) .content,
+.timeline ul li:nth-child(even) .content{
+  border-radius:14px;
+  box-shadow:var(--shadow-sm);
+  border:1px solid var(--line);
+}
+.timeline ul li .content h4 time{ color:var(--ink); font-weight:700; }
+.timeline ul li::after{ background:var(--accent) !important; border-color:#fff; }
+.badge-current{
+  display:inline-block; margin-top:8px; font-size:.7rem; font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; color:#fff;
+  background:var(--grad); padding:3px 10px; border-radius:99px;
+}
+
+/*----------------------  FAQ accordion  ----------------------*/
+.accordion dt a{ color:var(--ink) !important; font-weight:600; }
+.accordion dt a.active,
+.accordion dt a:hover{ color:var(--accent) !important; }
+
+/*----------------------  Archive / portfolio list  ----------------------*/
+.post-preview{ padding:6px 0; }
+.post-title a{ color:var(--ink) !important; font-weight:600; letter-spacing:-.01em; }
+.post-title a:hover{ color:var(--accent) !important; }
+.portfolio-photo{ border-radius:12px; box-shadow:var(--shadow-sm); }
+.single-portfolio .p-inner h5{ color:var(--ink); }
+.single-portfolio .cat{ color:var(--muted); }
+.filters ul li.active{ color:var(--accent); border-color:var(--accent); }
+
+/*----------------------  Footer  ----------------------*/
+.footer-area{
+  background:#12141f !important;
+  padding:70px 0 40px;
+}
+.footer-area h4{ color:#fff !important; font-size:1.05rem; }
+.footer-area p,
+.footer-area .footer-text{ color:#9aa1b4 !important; font-size:.92rem; }
+.footer-area a{ color:#c3c8d6 !important; }
+.footer-area a:hover{ color:#fff !important; }
+.footer-social a{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:40px; height:40px; border-radius:10px; margin-right:8px;
+  background:rgba(255,255,255,.07); color:#c3c8d6 !important;
+  transition:background .2s ease, color .2s ease, transform .2s ease;
+}
+.footer-social a:hover{ background:var(--grad); color:#fff !important; transform:translateY(-2px); }
+.footer-cta a{
+  display:inline-block; background:var(--grad); color:#fff !important;
+  padding:11px 24px; border-radius:999px; font-weight:600; margin-top:6px;
+  box-shadow:0 8px 22px -8px rgba(79,70,229,.6); transition:transform .2s ease;
+}
+.footer-cta a:hover{ transform:translateY(-2px); color:#fff !important; }
+
+/*----------------------  Skills & Tooling (redesigned cards)  ----------------------*/
+.skills-section .skill-grid{ margin-top:26px; }
+.skill-card{
+  background:var(--bg);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:26px 26px 22px;
+  box-shadow:var(--shadow-sm);
+  height:100%;
+  margin-bottom:30px;
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.skill-card:hover{ transform:translateY(-4px); box-shadow:var(--shadow-md); border-color:#d7d9ec; }
+.skill-card-head{ display:flex; align-items:center; gap:14px; margin-bottom:22px; }
+.skill-card-head h4{ font-size:1.12rem; margin:0; }
+.skill-icon{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:46px; height:46px; border-radius:12px; flex:0 0 46px;
+  background:rgba(79,70,229,.10); color:var(--accent) !important;
+  font-size:21px; -webkit-text-fill-color:var(--accent);
+}
+.skill-card:hover .skill-icon{ background:var(--grad); color:#fff !important; -webkit-text-fill-color:#fff; }
+.skills-section .single-skill{ margin-bottom:16px; }
+.skill-row{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px; }
+.skill-row .skill-name{ font-size:.9rem; font-weight:500; color:var(--ink-soft); }
+.skill-row .skill-pct{
+  font-family:'Space Grotesk','Inter',sans-serif; font-size:.82rem; font-weight:600;
+  color:var(--accent);
+}
+/* Tool tag clouds (skills cards) + inline tool pills (work cards) share .pill */
+.tool-tags{
+  display:flex; flex-wrap:wrap; gap:8px;
+  margin-top:20px; padding-top:18px; border-top:1px solid var(--line);
+}
+.pill{
+  display:inline-flex; align-items:center;
+  font-size:.76rem; font-weight:600; letter-spacing:.005em;
+  color:var(--accent-ink);
+  background:rgba(79,70,229,.08);
+  border:1px solid rgba(79,70,229,.14);
+  padding:5px 12px; border-radius:999px; line-height:1.2;
+  transition:background .2s ease, color .2s ease, border-color .2s ease;
+}
+.skill-card:hover .pill{ background:rgba(79,70,229,.12); }
+.pill:hover{ background:var(--grad); color:#fff; border-color:transparent; }
+
+/* Clickable skill pills that link to project write-ups */
+.skills-section .skill-links{ display:flex; flex-wrap:wrap; gap:9px; margin:2px 0 2px; }
+.skills-section .skill-card .tool-tags{ margin-top:18px; padding-top:16px; }
+a.pill{ text-decoration:none; cursor:pointer; }
+a.pill:hover{ background:var(--grad) !important; color:#fff !important; border-color:transparent; text-decoration:none; transform:translateY(-1px); }
+.skill-links a.pill{ font-weight:600; }
+
+/* "Live Interview!" hero button — reuses the glowing rainbow-token treatment */
+.interview-token{ text-decoration:none; transition:transform .2s ease; }
+.interview-token:hover{ transform:translateY(-2px); text-decoration:none; }
+.interview-token .infinity-token-inner{ padding:12px 24px; font-size:.98rem; }
+/* Pure-CSS play triangle — avoids the iOS emoji glyph (which renders as a
+   coloured square under -webkit-background-clip:text). White, crisp everywhere. */
+.li-play{
+  display:inline-block; width:0; height:0; vertical-align:middle;
+  border-style:solid; border-width:5px 0 5px 8px;
+  border-color:transparent transparent transparent #fff;
+}
+
+/*----------------------  Work-card tool pills  ----------------------*/
+.work-card .tools{
+  display:flex; flex-wrap:wrap; gap:7px; margin:0 0 18px;
+}
+.work-card .tools .pill{ font-size:.72rem; padding:4px 10px; }
+
+/*----------------------  "To infinity, and beyond" token  ----------------------*/
+.timeline-end{ text-align:center; margin-top:26px; position:relative; z-index:3; }
+.infinity-token{
+  position:relative; display:inline-flex; align-items:center; justify-content:center;
+  padding:2.5px; border-radius:999px;
+  background:linear-gradient(90deg,#ff4d6d,#ff9e3d,#ffe14d,#3ddc84,#22d3ee,#4f6bff,#a855f7,#ff4d6d);
+  background-size:280% 100%;
+  animation:rainbow-pan 6s linear infinite;
+}
+.infinity-token-glow{
+  position:absolute; inset:-7px; border-radius:999px; z-index:0;
+  background:linear-gradient(90deg,#ff4d6d,#ff9e3d,#ffe14d,#3ddc84,#22d3ee,#4f6bff,#a855f7,#ff4d6d);
+  background-size:280% 100%;
+  filter:blur(17px); opacity:.7;
+  animation:rainbow-pan 6s linear infinite, glow-pulse 2.8s ease-in-out infinite;
+}
+.infinity-token-inner{
+  position:relative; z-index:1;
+  display:inline-flex; align-items:center; gap:11px;
+  background:#12141f; color:#fff;
+  border-radius:999px; padding:13px 28px;
+  font-family:'Space Grotesk','Inter',sans-serif; font-weight:700;
+  letter-spacing:.005em; font-size:1.02rem;
+}
+.infinity-token-mark{
+  font-size:1.55rem; line-height:1; font-weight:700;
+  background:linear-gradient(90deg,#ff4d6d,#ffe14d,#3ddc84,#22d3ee,#a855f7);
+  background-size:200% 100%;
+  -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+  animation:rainbow-pan 5s linear infinite;
+}
+/* Reveal-on-scroll for the token (armed by main.js) — only reveal-token elements
+   are hidden/revealed, so always-on tokens (hero + CTA buttons) stay visible. */
+.tl-reveal-armed .reveal-token{
+  opacity:0; transform:translateY(22px) scale(.9);
+  transition:opacity .7s ease, transform .7s cubic-bezier(.22,1.25,.36,1);
+}
+.tl-reveal-armed .reveal-token.in-view{ opacity:1; transform:none; }
+@keyframes rainbow-pan{ to{ background-position:280% 0; } }
+@keyframes glow-pulse{ 0%,100%{ opacity:.5; } 50%{ opacity:.85; } }
+@media (prefers-reduced-motion: reduce){
+  .infinity-token, .infinity-token-glow, .infinity-token-mark{ animation:none; }
+  .tl-reveal-armed .reveal-token{ opacity:1 !important; transform:none !important; transition:none; }
+}
+
+/*----------------------  Interview CTA band (bottom of every page)  ----------------------*/
+.interview-cta{
+  background:linear-gradient(180deg,#f7f8fc 0%,#eef0fb 100%);
+  border-top:1px solid var(--line);
+  padding:60px 0; text-align:center;
+}
+.interview-cta-inner{ max-width:620px; margin:0 auto; padding:0 16px; }
+.interview-cta-kicker{
+  text-transform:uppercase; letter-spacing:.16em; font-size:12px; font-weight:700;
+  color:var(--accent); margin-bottom:10px;
+}
+.interview-cta h2{
+  font-family:'Space Grotesk','Inter',sans-serif; font-size:1.9rem;
+  letter-spacing:-.02em; margin-bottom:12px; color:var(--ink);
+}
+.interview-cta-sub{ color:var(--muted); font-size:1.02rem; line-height:1.7; margin-bottom:26px; }
+.interview-cta .interview-token .infinity-token-inner{ padding:14px 30px; font-size:1.02rem; }
+@media (max-width:768px){
+  .interview-cta{ padding:44px 0; }
+  .interview-cta h2{ font-size:1.55rem; }
+}
+
+/*----------------------  Responsive niceties  ----------------------*/
+@media (max-width:768px){
+  .banner-left h2{ font-size:2.3rem; }
+  .section-gap{ padding:42px 0; }
+  .hero-stats{ gap:24px; }
+  /* Stacked skill columns: left-aligned labels and tighter headings */
+  .single-skill p{ text-align:left !important; }
+  .skillbar-wraps h4{ padding-top:34px; }
+  .infinity-token-inner{ font-size:.92rem; padding:11px 22px; }
+}
+
+/*==============================================================
+  Density pass — trim vertical whitespace across the site
+==============================================================*/
+/* Hero: shorter fixed height so the fold isn't mostly empty */
+.banner-area .fullscreen{ height:600px !important; }
+/* Theme forces .banner-area{height:900px} at <=770px, which centres the hero in a
+   tall box and leaves a big empty gap above the text on phones. Let it size to content. */
+@media (max-width:768px){
+  .banner-area{ height:auto !important; }
+  .banner-area .fullscreen{ height:auto !important; padding:32px 0 8px; align-items:flex-start; }
+  /* Theme adds a 100px top margin to the hero text on phones — remove it. */
+  .banner-left{ margin-top:0 !important; }
+}
+
+/* Home-about (about page) + huck gallery use this border block */
+.section-top-border{ padding:34px 0 !important; }
+
+/* Timeline breathing room */
+.timeline.pt-80{ padding-top:52px !important; }
+.timeline.pb-80{ padding-bottom:44px !important; }
+
+/* Shrink the theme's large spacing utilities everywhere they're used */
+.pt-80{ padding-top:50px; }
+.pb-80{ padding-bottom:50px; }
+.pt-60{ padding-top:38px; }
+.pt-50{ padding-top:30px; }
+.pt-40{ padding-top:26px; }
+.pb-40{ padding-bottom:26px; }
+.pb-30{ padding-bottom:18px; }
+.pb-20{ padding-bottom:12px; }
+.mt-40{ margin-top:24px; }
+
+/* Section titles / intro copy sit closer to their content */
+.menu-content{ margin-bottom:0; }
+.personal-details h1{ margin-bottom:6px; }
+/* The two <br> spacers under "About Me" on the home page add dead space */
+.personal-details br{ display:none; }
+.generic-blockquote{ margin-top:18px; margin-bottom:20px; }
+
+/* Card grids: a touch less gutter between rows */
+.single-recent-blog{ margin-bottom:24px !important; }
+.skill-card{ margin-bottom:24px; }

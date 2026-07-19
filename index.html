@@ -1,25 +1,29 @@
-	<!DOCTYPE html>
-	<html lang="zxx" class="no-js">
-	<head>
-		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
-		<!-- Author Meta -->
-		<meta name="author" content="Harrison Jansma">
-		<!-- Meta Description -->
-		<meta name="description" content="A personal website built and deployed by Harrison Jansma.">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="portfolio">
-		<!-- meta character set -->
-		<meta charset="UTF-8">
-		<!-- Site Title -->
-		<title>H. Jansma</title>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+	<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+	<link rel="apple-touch-icon" href="img/favicon-180.png">
+	<link rel="shortcut icon" href="img/favicon-32.png">
+	<meta name="theme-color" content="#4f46e5">
+	<!-- Author Meta -->
+	<meta name="author" content="Harrison Jansma">
+	<!-- Meta Description -->
+	<meta name="description" content="Harrison Jansma — Machine Learning Engineer and Data Science Manager leading Generative AI at Capital One. 6+ years shipping real-time LLM, RAG, and NLP systems to production.">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="Harrison Jansma, Machine Learning Engineer, Data Science Manager, Generative AI, LLM, RAG, NLP, MLOps, Applied Scientist, Capital One">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Harrison Jansma — Machine Learning Engineer &amp; Data Science Manager</title>
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-			<!--
-			CSS
-			============================================= -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+		<!--
+		CSS
+		============================================= -->
 			<link rel="stylesheet" href="css/linearicons.css">
 			<link rel="stylesheet" href="css/font-awesome.min.css">
 			<link rel="stylesheet" href="css/bootstrap.css">
@@ -29,6 +33,7 @@
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">
 			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="css/refresh.css">
 		</head>
 
 		<body>
@@ -36,20 +41,17 @@
 	      <div class="container main-menu">
 	        <div class="row align-items-center justify-content-between d-flex">
 	          <div class id="logo">
-	            <a href="/"><h3>H. Jansma </h3></a>
+	            <a href="/"><h3>Harrison Jansma</h3></a>
 	         </div>
 	          <nav id="nav-menu-container">
 	            <ul class="nav-menu">
 	              <li><a href="/">Home</a></li>
 	              <li><a href="about">About</a></li>
-
-
-	              <li><a href="archive">Portfolio</a></li>
+	              <li><a href="projects">Projects</a></li>
 	              <li><a href="huckleberry">Huck</a></li>
-                <li><a href="https://www.amyrayblog.com">The Wife</a> </li>
+                <li><a href="https://www.amyjansma.com">The Wife</a> </li>
 	              <li><a href="HarrisonJansmaResume.pdf" class="genric-btn primary-border circle" target="_blank">Resume</a></li>
 	              </ul>
-
 	          </nav><!-- #nav-menu-container -->
 	        </div>
 	      </div>
@@ -59,13 +61,19 @@
 				<div class="container">
 					<div class="row fullscreen align-items-center justify-content-between">
 						<div class="col-lg-6 col-md-6 col-xs-6 banner-left">
-							<h5>I am</h5>
-
+							<h5>Machine Learning Engineer &amp; Data Science Manager</h5>
 							<h2 class="mt-10 mb-20">Harrison Jansma</h2>
 							<p>
-								Contemplative coder and analyst. Inspired by tough problems.
+								I build generative-AI systems that reach production — real-time LLM tools, RAG, and NLP at scale — and lead the teams that ship them.
 							</p>
-							<a href="archive" class="primary-btn text-uppercase mb-20">My Projects</a>
+							<div class="hero-stats">
+								<div><span class="num">6+</span><span class="lbl">Years in applied AI/ML</span></div>
+								<div><span class="num">Real-time</span><span class="lbl">GenAI in production</span></div>
+								<div><span class="num">LLM &middot; RAG</span><span class="lbl">NLP systems at scale</span></div>
+							</div>
+							<div class="hero-btns">
+								<a href="HarrisonJansmaResume.pdf" target="_blank" class="primary-btn btn-ghost mb-20">Résumé</a>
+							</div>
 						</div>
 						<div class="col-lg-6 col-md-6 col-xs-6 banner-right align-self-center">
 							<img src="img/harrison.png" style="width:auto;height:auto;max-width:100%;">
@@ -76,102 +84,207 @@
 			<!-- End banner Area -->
 
 			<!-- Start home-about Area -->
-			<section class="home-about-area section-gap">
+			<section class="home-about-area section-gap section-tint">
 				<div class="container">
 					<div class="row align-items-center justify-content-between personal-details">
-							<h1 class="text-uppercase">Personal Details</h1>
+							<h1 class="text-uppercase">About Me</h1>
 							<br>
 							<br>
-
 							<blockquote class="generic-blockquote">
 								<p class="fz-16">
-
-									 A few interesting things about me. I love to read science fiction (my favorite is Frank Herbert's Dune). I am also an avid gamer. I love to play competitive strategy games and first-person shooters. Lastly, I love learning. Every day I push myself to learn something new, whether that be about machine learning, software engineering, or miscellaneous facts about the universe.
+									 I'm a Machine Learning Engineer and Data Science Manager at Capital One, where I lead Generative AI for the contact centers — LLM-powered, agentic tools that augment thousands of servicing agents live, mid-conversation. Over six years I've taken applied AI from prototype to production: real-time NLP, RAG, low-latency streaming inference, and the credit-risk ML that decisions loans at large scale.
 								</p>
 								<p class="fz-16">
-									 On top of recently getting married and graduating with a masters in computer science from UT Dallas, I also recently started working as a senior data scientist at Capital One. My work mainly revolves around utilizing natural language processing to build a more intelligent customer experience.
+									 What drives me is making a product measurably better for the people using it. Outside work: science fiction (Dune above all), strategy games, and time with my wife Amy and our dog Huck.
 								</p>
-
 							</blockquote>
-							<a href="about" class="primary-btn text-uppercase">About me</a>
-
+							<a href="about" class="primary-btn text-uppercase">More about me</a>
 					</div>
 				</div>
 			</section>
 			<!-- End home-about Area -->
 
-<div clss="container">
-<hr>
-</div>
+<!-- Start selected-work Area -->
+<section class="recent-blog-area section-gap" id="work">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-8 pb-30 header-text text-center">
+				<h1>Selected Work</h1>
+				<p>
+					Flagship generative-AI systems I've taken from prototype to production at Capital One &mdash;
+					starting with a public, clickable rebuild you can try yourself.
+				</p>
+			</div>
+		</div>
+
+		<!-- Featured: live, clickable demo -->
+		<div class="row justify-content-center pb-30">
+			<div class="col-lg-11">
+				<div class="work-card work-card-featured featured-split">
+					<div class="featured-copy">
+						<span class="tag"><span class="li-play" aria-hidden="true"></span>&nbsp; Live demo &middot; you can try this one</span>
+						<h4>Live Call Copilot</h4>
+						<p>
+							A public rebuild of the shape of the three systems below, running live in your browser. Talk
+							into your mic &mdash; or play a sample call &mdash; and watch a two-voice transcript,
+							self-drafting notes, RAG-retrieved procedure docs, and a sub-second frustration alert, all
+							from a single WebSocket. Deepgram + OpenAI composed into a real-time product; no proprietary
+							anything.
+						</p>
+						<div class="tools">
+							<span class="pill">Next.js</span>
+							<span class="pill">Deepgram</span>
+							<span class="pill">OpenAI</span>
+							<span class="pill">pgvector</span>
+							<span class="pill">Railway</span>
+						</div>
+						<div class="hero-btns" style="margin-top:22px;">
+							<a href="https://agentassistdemo.harrisonjansma.com" target="_blank" class="primary-btn text-uppercase mb-20">Try the live demo</a>
+							<a href="call-copilot" class="primary-btn btn-ghost text-uppercase mb-20">Read the write-up</a>
+						</div>
+					</div>
+					<a class="featured-media" href="call-copilot" aria-label="Read the Live Call Copilot write-up">
+						<img src="img/call-copilot.png" alt="Live Call Copilot demo — two-voice transcript, self-drafting notes, RAG procedure docs, and a frustration alert">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="single-recent-blog col-lg-4 col-md-6">
+				<div class="work-card">
+					<span class="tag">Generative AI</span>
+					<h4><a class="card-title-link" href="summarization">Real-Time Call Summarization</a></h4>
+					<p>
+						An agentic GPT reasoning pipeline on Kafka that auto-drafts servicing-agent notes mid-call, with an LLM "agent-as-a-judge" review stage before anything reaches the agent.
+					</p>
+					<div class="tools">
+						<span class="pill">GPT-4</span>
+						<span class="pill">Kafka</span>
+						<span class="pill">Python</span>
+						<span class="pill">AWS Lambda</span>
+						<a class="card-link" href="summarization">Read the write-up &rarr;</a>
+					</div>
+					<div class="metric">
+						<div><b>Real-time</b><span>Mid-call notes</span></div>
+						<div><b>Agentic</b><span>Draft + review</span></div>
+						<div><b>In pilot</b><span>Governed rollout</span></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="single-recent-blog col-lg-4 col-md-6">
+				<div class="work-card">
+					<span class="tag">Retrieval &middot; RAG</span>
+					<h4><a class="card-title-link" href="rag">Live Procedure RAG</a></h4>
+					<p>
+						A retrieval-augmented generation system that runs vector-embedding retrieval over live call transcripts to surface the right procedure and training documents to agents in real time.
+					</p>
+					<div class="tools">
+						<span class="pill">RAG</span>
+						<span class="pill">pgvector</span>
+						<span class="pill">Embeddings</span>
+						<span class="pill">Python</span>
+						<a class="card-link" href="rag">Read the write-up &rarr;</a>
+					</div>
+					<div class="metric">
+						<div><b>Real-time</b><span>Mid-conversation</span></div>
+						<div><b>Vector search</b><span>Procedure docs</span></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="single-recent-blog col-lg-4 col-md-6">
+				<div class="work-card">
+					<span class="tag">Real-Time NLP</span>
+					<h4><a class="card-title-link" href="sentiment">Frustrated-Customer Detection</a></h4>
+					<p>
+						Capital One's first real-time AI alert system — streaming DistilBERT and LLM sentiment over live calls at scale, alerting managers to de-escalate in real time.
+					</p>
+					<div class="tools">
+						<span class="pill">DistilBERT</span>
+						<span class="pill">PyTorch</span>
+						<span class="pill">Kafka</span>
+						<span class="pill">LLMs</span>
+						<a class="card-link" href="sentiment">Read the write-up &rarr;</a>
+					</div>
+					<div class="metric">
+						<div><b>Real-time</b><span>Live alerting</span></div>
+						<div><b>At scale</b><span>Across the business</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container text-center mt-10">
+			<a href="projects" class="primary-btn btn-ghost text-uppercase">See all projects</a>
+		</div>
+	</div>
+</section>
+<!-- end selected-work Area -->
+
 			<!-- Start services Area -->
-			<section class="services-area section-gap">
+			<section class="services-area section-gap section-tint">
 				<div class="container">
 		            <div class="row d-flex justify-content-center">
-		                <div class="menu-content  col-lg-7">
+		                <div class="menu-content  col-lg-8">
 		                    <div class="title text-center">
-		                        <h1 class="mb-10">Areas of Interest</h1>
-		                        <p> Take a look at some of the things I love working on.
+		                        <h1 class="mb-10">What I Work On</h1>
+		                        <p> From research to real-time production — the problems I love solving.</p>
 		                    </div>
 		                </div>
 		            </div>
 					<div class="row">
 						<div class="col-lg-4 col-md-6">
 							<div class="single-services">
-								<span class="lnr lnr-cloud-check"></span>
-								<a><h4>Cloud Compute</h4></a>
+								<span class="lnr lnr-magic-wand"></span>
+								<a><h4>Generative AI</h4></a>
 								<p>
-										I utilize AWS to develop and productionize machine learning systems.
+										Agentic LLM pipelines, RAG, and prompt/eval systems that augment thousands of users live, with measurable business outcomes.
 								</p>
 							</div>
 						</div>
-
-
-
 						<div class="col-lg-4 col-md-6">
 							<div class="single-services">
 								<span class="lnr lnr-bubble"></span>
-								<a><h4>NLP</h4></a>
+								<a><h4>Real-Time NLP</h4></a>
 								<p>
-									I apply text analytics to some of the hardest questions in business.
+									Sentiment, complaint, and intent detection over streaming call transcripts — with sub-second alerting for de-escalation.
 								</p>
 							</div>
 						</div>
-
 						<div class="col-lg-4 col-md-6">
 							<div class="single-services">
-								<span class="lnr lnr-graduation-hat"></span>
-								<a><h4>Machine Learning</h4></a>
+								<span class="lnr lnr-checkmark-circle"></span>
+								<a><h4>LLM Evaluation</h4></a>
 								<p>
-									I am passionate about learning the theory that is pushing the cutting edge of ML.
+									LLM-as-a-judge, offline &amp; online evaluation, and observability for non-deterministic systems in production.
 								</p>
 							</div>
 						</div>
-
-
 						<div class="col-lg-4 col-md-6">
 							<div class="single-services">
 								<span class="lnr lnr-layers"></span>
-								<a><h4>Parallel Computing</h4></a>
+								<a><h4>ML Systems at Scale</h4></a>
 								<p>
-									HIVE, Hadoop, and Spark, Oh my!
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services">
-								<span class="lnr lnr-laptop-phone"></span>
-								<a><h4>Collaboration</h4></a>
-								<p>
-									I enjoy working with my team to create winning strategies.
+									Low-latency, real-time streaming inference on Kafka, AWS Lambda, DynamoDB, and Snowflake.
 								</p>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6">
 							<div class="single-services">
 								<span class="lnr lnr-chart-bars"></span>
-								<a><h4>Data Analytics</h4></a>
+								<a><h4>Applied ML &amp; Credit</h4></a>
 								<p>
-									I love telling a story. Getting to the heart of a problem and coming up with a solution.
+									Auto-loan underwriting models decisioning billions, plus reinforcement-learning credit-policy optimization.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-services">
+								<span class="lnr lnr-users"></span>
+								<a><h4>Technical Leadership</h4></a>
+								<p>
+									Leading ML engineers and data scientists, setting technical objectives with VP- and EVP-level stakeholders.
 								</p>
 							</div>
 						</div>
@@ -180,283 +293,161 @@
 			</section>
 			<!-- End services Area -->
 
-
-
-
-	<hr>
-
-	<section class="home-about-area section-gap">
-
+	<section class="home-about-area section-gap skills-section">
+		<div class="container">
 			<div class="text-center">
 					<div class="menu-content">
 							<div class="title text-center">
-									<h1 class="mb-10">Skills Expertisse</h1>
-									  1 - Basic <span style="display: inline-block; width: 2ch;">&#9;</span>
-										 2 - Novice <span style="display: inline-block; width: 2ch;">&#9;</span>
-										 3 - Intermediate<span style="display: inline-block; width: 2ch;">&#9;</span>
-										  <p>4 - Advanced<span style="display: inline-block; width: 2ch;">&#9;</span>
-											 5 - Expert<p/>
+									<h1 class="mb-10">Skills &amp; Tooling</h1>
+									<p>The stack I reach for when taking models to production &mdash; tap a skill to read the case study.</p>
 							</div>
 					</div>
 			</div>
 
-
-<div class="container">
-		<div class="row skillbar-wraps">
-			<div class="col-lg-4 skill-left">
-				<h4 class="text-center pt-50"> Devops </h4>
-				<div class="single-skill">
-					<p>
-						Databases (SQL) -   5
-					</p>
-					<div class="skill" data-width="100"></div>
+			<div class="row skill-grid">
+				<div class="col-lg-4 col-md-6">
+					<div class="skill-card">
+						<div class="skill-card-head">
+							<span class="skill-icon lnr lnr-magic-wand"></span>
+							<h4>GenAI &amp; LLMs</h4>
+						</div>
+						<div class="skill-links">
+							<a class="pill" href="summarization">Agentic Pipelines</a>
+							<a class="pill" href="rag">RAG &amp; Vector Search</a>
+							<a class="pill" href="complaint">LLM-as-a-Judge</a>
+							<a class="pill" href="call-copilot">Live Demo</a>
+						</div>
+						<div class="tool-tags">
+							<span class="pill">Claude Code</span>
+							<span class="pill">OpenAI</span>
+							<span class="pill">RAG</span>
+							<span class="pill">pgvector</span>
+							<span class="pill">LLM-as-Judge</span>
+						</div>
+					</div>
 				</div>
 
-				<div class="single-skill">
-					<p>
-						Servers (Linux / Bash) -   4
-					</p>
-					<div class="skill" data-width="80"></div>
+				<div class="col-lg-4 col-md-6">
+					<div class="skill-card">
+						<div class="skill-card-head">
+							<span class="skill-icon lnr lnr-bubble"></span>
+							<h4>ML &amp; NLP</h4>
+						</div>
+						<div class="skill-links">
+							<a class="pill" href="sentiment">Real-Time Sentiment</a>
+							<a class="pill" href="complaint">Complaint Detection</a>
+							<a class="pill" href="emotion">Emotion Classification</a>
+							<a class="pill" href="anomaly">Anomaly Detection</a>
+						</div>
+						<div class="tool-tags">
+							<span class="pill">PyTorch</span>
+							<span class="pill">Hugging Face</span>
+							<span class="pill">scikit-learn</span>
+							<span class="pill">DistilBERT</span>
+							<span class="pill">TensorFlow</span>
+						</div>
+					</div>
 				</div>
 
-				<div class="single-skill">
-					<p>
-						Big Data (HIVE / Spark) - 3
-					</p>
-					<div class="skill" data-width="60"></div>
+				<div class="col-lg-4 col-md-6">
+					<div class="skill-card">
+						<div class="skill-card-head">
+							<span class="skill-icon lnr lnr-layers"></span>
+							<h4>Systems &amp; Leadership</h4>
+						</div>
+						<div class="skill-links">
+							<a class="pill" href="sentiment">Real-time streaming</a>
+							<a class="pill" href="underwriting">Auto-Loan Underwriting</a>
+							<a class="pill" href="credit-policy">RL Credit Policy</a>
+							<a class="pill" href="teaching">Teaching</a>
+						</div>
+						<div class="tool-tags">
+							<span class="pill">Kafka</span>
+							<span class="pill">AWS Lambda</span>
+							<span class="pill">DynamoDB</span>
+							<span class="pill">Snowflake</span>
+							<span class="pill">Splunk</span>
+						</div>
+					</div>
 				</div>
 			</div>
-
-
-
-
-			<div class="col-lg-4 skill-right">
-				<h4 class="text-center pt-50">Machine Learning</h4>
-				<div class="single-skill">
-					<p>
-						Python - 5
-					</p>
-					<div class="skill" data-width="100"></div>
-				</div>
-				<div class="single-skill">
-					<p>
-						Computer Vision (TensorFlow) - 4
-					</p>
-					<div class="skill" data-width="80"></div>
-				</div>
-
-				<div class="single-skill">
-					<p>
-						NLP (Spacy / TensorFlow) - 4
-					</p>
-					<div class="skill" data-width="80"></div>
-				</div>
-
-			</div>
-
-			<div class="col-lg-4 skill-right">
-				<h4 class="text-center pt-50"> Data Analytics </h4>
-
-				<div class="single-skill">
-					<p>
-						Teaching / Presenting - 5
-					</p>
-					<div class="skill" data-width="100"></div>
-				</div>
-
-				<div class="single-skill">
-					<p>
-						Statistical Methods - 4
-					</p>
-					<div class="skill" data-width="80"></div>
-				</div>
-
-
-				<div class="single-skill">
-					<p>
-						Visualization (Tableau) - 3
-					</p>
-					<div class="skill" data-width="60"></div>
-				</div>
-
-			</div>
-
 		</div>
-	</div>
-
 	</section>
 
-
-<hr>
-
-
-
-
-<!-- Start recent-blog Area -->
-<section class="recent-blog-area section-gap">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-8 pb-30 header-text">
-				<h1>My Latest Projects</h1>
-				<p>
-					Take a look at my recent work.
-				</p>
-			</div>
-		</div>
-		<div class="row">
-
-			<div class="single-recent-blog col-lg-4 col-md-4">
-				<div class="thumb">
-					<a href="https://towardsdatascience.com/automating-aws-server-shut-down-for-deep-learning-5d5de1301c70" target="_blank">
-					<img class="f-img img-fluid" src="img/medium2.jpg" alt="">
-				</a>
-				</div>
-				<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-
-					<div class="meta">
-						Jan 20, 2020
-					</div>
-				</div>
-				<a href="https://towardsdatascience.com/automating-aws-server-shut-down-for-deep-learning-5d5de1301c70" target="_blank">
-					<h4>Automating AWS EC2 Shutdown with Bash Scripts </h4>
-				</a>
-				<p>
-					A helpful tutorial I wrote recently on how to set up a Bash script that utilized the AWS CLI to start, log into, then shutdown an EC2 instance. (I didn't want to forget the instance was running and lose money)
-				</p>
-			</div>
-
-			<div class="single-recent-blog col-lg-4 col-md-4">
-				<div class="thumb">
-					<a href="https://github.com/harrisonjansma/2019_Notes/tree/master/ML/NLP/PyTorch%20RNN%20Implementations" target="_blank">
-					<img class="f-img img-fluid" src="img/alg.jpg" alt="">
-				</a>
-				</div>
-				<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-					<div class="meta">
-						Dec 10, 2019
-					</div>
-				</div>
-				<a href="https://github.com/harrisonjansma/2019_Notes/tree/master/ML/NLP/PyTorch%20RNN%20Implementations" target="_blank">
-					<h4>RNNs, LSTMs, and Attention Mechanisms for Language Modelling (PyTorch)</h4>
-				</a>
-				<p>
-				  Tested the use of Word2Vec embeddings with a variety of sequential input deep learning models towards the task of language modeling (predicting the next word in a sentence).
-				</p>
-			</div>
-
-			<div class="single-recent-blog col-lg-4 col-md-4">
-				<div class="thumb">
-					<a href="https://github.com/harrisonjansma/DavisBase" target="_blank">
-					<img class="f-img img-fluid" src="img/database.png" alt="" style="width:300px;height:294px;">
-				</a>
-				</div>
-				<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-
-					<div class="meta">
-						Dec 2, 2019
-					</div>
-				</div>
-				<a href="https://github.com/harrisonjansma/DavisBase" target="_blank">
-					<h4>DavisBase: A Custom Designed Database (Python)</h4>
-				</a>
-				<p>
-					  A fully functional, SQL-compliant database implemented from scratch in Python. DavisBase compresses data to a custom-designed bit-level encoding for maximal data compression. By utilizing a file size of 512Kb, DavisBase performs well in low memory environments while also maximizing query time.
-				</p>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- end recent-blog Area -->
-
-
-
-<hr>
-			<!-- Start price Area -->
-<section class="price-area section-gap">
+			<!-- Start platforms Area -->
+<section class="price-area section-gap section-tint">
 				<div class="container">
 					<div class="row d-flex justify-content-center">
-
 							<div class="menu-content pb-20 col-lg-8">
 							<div class="title text-center">
-								<h1 class="mb-10">Other Platforms</h1>
-
+								<h1 class="mb-10">Find Me Online</h1>
+								<p>Where I share code, writing, and professional updates.</p>
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-lg-6 col-md-6 single-price">
-							<a href="https://github.com/harrisonjansma">
+					<div class="row platform-grid">
+						<div class="col-lg-4 col-md-4 single-price">
+							<a href="https://www.linkedin.com/in/harrisonjansma" target="_blank">
 							<div class="top-part">
-								<img src="img/github.jpg" height=300 width=300>
+								<div class="p-icon"><i class="fa fa-linkedin"></i></div>
+								<h4>LinkedIn</h4>
+								<p class="mt-10">Experience, updates, and the best way to reach me.</p>
+							</div>
+						</a>
+						</div>
+						<div class="col-lg-4 col-md-4 single-price">
+							<a href="https://github.com/harrisonjansma" target="_blank">
+							<div class="top-part">
+								<div class="p-icon"><i class="fa fa-github"></i></div>
 								<h4>GitHub</h4>
-								<p class="mt-10">My base-of-operations for all things code.</p>
+								<p class="mt-10">My base of operations for all things code.</p>
 							</div>
 						</a>
-
-
 						</div>
-						<div class="col-lg-6 col-md-6 single-price">
-							<a href="https://www.medium.com/@harrisonjansma">
+						<div class="col-lg-4 col-md-4 single-price">
+							<a href="https://medium.com/@harrisonjansma" target="_blank">
 							<div class="top-part">
-								<img src="img/medium3.jpg" height=300 width=300>
+								<div class="p-icon"><i class="fa fa-medium"></i></div>
 								<h4>Medium</h4>
-								<p class="mt-10">Where I write stuff. </p>
+								<p class="mt-10">Where I write about machine learning.</p>
 							</div>
 						</a>
-
-
 						</div>
-
-
 					</div>
 				</div>
 			</section>
-			<!-- End price Area -->
+			<!-- End platforms Area -->
 
-
-			<!-- start footer Area -->
+    <!-- start footer Area -->
 			<footer class="footer-area section-gap">
 					<div class="container">
 							<div class="row">
 									<div class="col-lg-5 col-md-6 col-sm-6">
 											<div class="single-footer-widget">
-													<h4>About This Page</h4>
+													<h4>About This Site</h4>
 													<p class="footer-text">
-															This website was coded in HTML, CSS, and Javascript based on a theme from Colorlib. It is hosted on a LAMP server from DigitalOcean. The code can be found <a href="https://github.com/harrisonjansma/cv-website" target="_blank"> here.</a>
+															A refreshed personal site, hand-built with HTML, CSS, and JavaScript and hosted on GitHub Pages. It started as a way to learn web and back-end development, and it's grown up alongside my career.
 													</p>
-													<p class="footer-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+													<p class="footer-text">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Harrison Jansma. All rights reserved.
+<!-- Original template by Colorlib (CC BY 3.0). --></p>
 											</div>
 									</div>
-									<div class="col-lg-5 col-md-6 col-sm-6">
-											<div class="single-footer-widget">
-													<h4>Newsletter</h4>
-													<p>Stay updated with my latest projects</p>
-					<div class="" id="mc_embed_signup">
-						 <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
-							<div class="input-group">
-								<input type="text" class="form-control" name="EMAIL" placeholder="Enter Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address '" required="" type="email">
-								<div class="input-group-btn">
-									<button class="btn btn-default" type="submit">
-										<span class="lnr lnr-arrow-right"></span>
-									</button>
-								</div>
-									<div class="info"></div>
-							</div>
-						</form>
-					</div>
+									<div class="col-lg-4 col-md-6 col-sm-6">
+											<div class="single-footer-widget footer-cta">
+													<h4>Get in Touch</h4>
+													<p>Open to conversations about generative AI, applied ML, and building teams that ship it.</p>
+													<a href="mailto:harrisonjansma@gmail.com">Email me</a>
 											</div>
 									</div>
-									<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+									<div class="col-lg-3 col-md-6 col-sm-6 social-widget">
 											<div class="single-footer-widget">
 													<h4>Follow Me</h4>
-													<p>Let's be social. </p>
+													<p>Let's be social.</p>
 													<div class="footer-social d-flex align-items-center">
-															<a href="https://medium.com/@harrisonjansma"><i class="fa fa-medium"></i></a>
-															<a href="http://www.linkedin.com/in/harrisonjansma"><i class="fa fa-linkedin"></i></a>
-															<a href="https://github.com/harrisonjansma"><i class="fa fa-github"></i></a>
-
+															<a href="https://www.linkedin.com/in/harrisonjansma" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+															<a href="https://github.com/harrisonjansma" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+															<a href="https://medium.com/@harrisonjansma" target="_blank" title="Medium"><i class="fa fa-medium"></i></a>
 													</div>
 											</div>
 									</div>
@@ -465,15 +456,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			</footer>
 			<!-- End footer Area -->
 
-
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="js/popper.min.js"></script>
 			<script src="js/vendor/bootstrap.min.js"></script>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
   			<script src="js/easing.min.js"></script>
 			<script src="js/hoverIntent.js"></script>
 			<script src="js/superfish.min.js"></script>
-			<script src="js/jquery.ajaxchimp.min.js"></script>
 			<script src="js/jquery.magnific-popup.min.js"></script>
     		<script src="js/jquery.tabs.min.js"></script>
 			<script src="js/jquery.nice-select.min.js"></script>
@@ -482,7 +470,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			<script src="js/jquery.counterup.min.js"></script>
 			<script src="js/simple-skillbar.js"></script>
 			<script src="js/owl.carousel.min.js"></script>
-			<script src="js/mail-script.js"></script>
 			<script src="js/scroll.js"></script>
 			<script src="js/main.js"></script>
 		</body>
