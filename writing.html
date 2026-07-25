@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/refresh.css">
+    <link rel="stylesheet" href="css/chrome.css">
 
     <style>
       .post-body { padding-top: 46px; padding-bottom: 60px; }
@@ -44,22 +45,27 @@
     </style>
   </head>
   <body>
-    <header id="header">
-      <div class="container main-menu">
-        <div class="row align-items-center justify-content-between d-flex">
-          <div class id="logo"><a href="/"><h3>Harrison Jansma</h3></a></div>
-          <nav id="nav-menu-container">
-            <ul class="nav-menu">
-              <li><a href="/">Home</a></li>
-              <li><a href="about">About</a></li>
-              <li><a href="projects">Projects</a></li>
-              <li><a href="huckleberry">Huck</a></li>
-              <li><a href="https://www.amyjansma.com">The Wife</a> </li>
-              <li><a href="HarrisonJansmaResume.pdf" class="genric-btn primary-border circle" target="_blank">Resume</a></li>
-            </ul>
-          </nav>
-        </div>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">
+          <img src="img/favicon.svg" alt="">
+          <span class="brand-lockup">
+            <span class="brand-name">Harrison Jansma</span>
+            <span class="brand-kicker">ML Engineering &middot; GenAI</span>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-label="Menu" aria-expanded="false"><span class="lnr lnr-menu"></span></button>
+        <nav class="nav" data-nav-list>
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="about">About</a>
+          <a class="nav-link is-current" href="projects">Projects</a>
+          <a class="nav-link" href="huckleberry">Huck</a>
+          <span class="nav-div"></span>
+          <a class="nav-link nav-ext" href="https://www.amyjansma.com" target="_blank">The Wife<span class="ext-arrow">&#8599;</span></a>
+          <a class="nav-resume" href="HarrisonJansmaResume.pdf" target="_blank">R&eacute;sum&eacute;</a>
+        </nav>
       </div>
+      <div class="header-strip"></div>
     </header>
     <section class="about-banner">
       <div class="container">
@@ -95,36 +101,42 @@
       </div>
     </section>
 
-    <footer class="footer-area section-gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-6 col-sm-6">
-                    <div class="single-footer-widget">
-                        <h4>About This Site</h4>
-                        <p class="footer-text">A refreshed personal site, hand-built with HTML, CSS, and JavaScript and hosted on GitHub Pages. It started as a way to learn web and back-end development, and it's grown up alongside my career.</p>
-                        <p class="footer-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Harrison Jansma. All rights reserved.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-footer-widget footer-cta">
-                        <h4>Get in Touch</h4>
-                        <p>Open to conversations about generative AI, applied ML, and building teams that ship it.</p>
-                        <a href="mailto:harrisonjansma@gmail.com">Email me</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 social-widget">
-                    <div class="single-footer-widget">
-                        <h4>Follow Me</h4>
-                        <p>Let's be social.</p>
-                        <div class="footer-social d-flex align-items-center">
-                            <a href="https://www.linkedin.com/in/harrisonjansma" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                            <a href="https://github.com/harrisonjansma" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
-                            <a href="https://medium.com/@harrisonjansma" target="_blank" title="Medium"><i class="fa fa-medium"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="img/favicon.svg" alt="">
+            <span>Harrison Jansma</span>
+          </div>
+          <p>Machine Learning Engineer &amp; Data Science Manager. Open to conversations about generative AI and applied ML.</p>
+          <a class="footer-email" href="mailto:contact@harrisonjansma.com">contact@harrisonjansma.com</a>
         </div>
+        <div class="footer-col">
+          <div class="micro">Pages</div>
+          <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="about">About</a>
+            <a class="is-current" href="projects">Projects</a>
+            <a href="huckleberry">Huck</a>
+            <a href="HarrisonJansmaResume.pdf" target="_blank">R&eacute;sum&eacute; <span class="ext-arrow">&#8599;</span></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="micro">Elsewhere</div>
+          <div class="footer-links">
+            <a href="https://www.linkedin.com/in/harrisonjansma" target="_blank">LinkedIn <span class="ext-arrow">&#8599;</span></a>
+            <a href="https://github.com/harrisonjansma" target="_blank">GitHub <span class="ext-arrow">&#8599;</span></a>
+            <a href="https://medium.com/@harrisonjansma" target="_blank">Medium <span class="ext-arrow">&#8599;</span></a>
+            <a href="https://www.amyjansma.com" target="_blank">The Wife <span class="ext-arrow">&#8599;</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="footer-bottom">
+          <span>&copy; <script>document.write(new Date().getFullYear());</script> Harrison Jansma</span>
+          <span>Hand-built with HTML, CSS &amp; JavaScript &middot; GitHub Pages</span>
+        </div>
+      </div>
     </footer>
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -142,5 +154,6 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/site.js"></script>
   </body>
 </html>
