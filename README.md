@@ -22,9 +22,15 @@ component polish without rebuilding the underlying markup.
 
 ## Local preview
 
-It's fully static, so any static file server works:
+The site uses GitHub Pages "clean URLs" (links like `href="projects"` with no
+`.html`). Use the included `serve.py`, which resolves those the same way Pages
+does, so navigation works locally:
 
 ```bash
-python3 -m http.server 8000
+python3 serve.py 8000
 # then open http://localhost:8000
 ```
+
+A plain `python3 -m http.server 8000` also works, but extensionless nav links
+(About, Projects, Huck, and the project detail pages) will 404 because it serves
+paths literally.

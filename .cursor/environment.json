@@ -1,0 +1,16 @@
+{
+  "name": "harrisonjansma.github.io",
+  "install": "python3 --version",
+  "terminals": [
+    {
+      "name": "web",
+      "command": "python3 serve.py 8000"
+    }
+  ],
+  "ports": [
+    {
+      "name": "web",
+      "port": 8000
+    }
+  ]
+}
