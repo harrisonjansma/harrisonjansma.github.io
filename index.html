@@ -19,6 +19,9 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/chrome.css">
 	<link rel="stylesheet" href="css/site.css">
+	<style>
+		.hero-avatar{width:88px;height:88px;border-radius:50%;object-fit:cover;object-position:center 20%;display:block;margin-bottom:20px;border:3px solid #fff;box-shadow:0 8px 22px rgba(17,20,38,.16);outline:2px solid rgba(99,102,241,.35);outline-offset:3px;}
+	</style>
 	<!-- Arms the reveal transitions before first paint; without JS the
 	     content simply renders visible. -->
 	<script>if(!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches))document.documentElement.className+=' js-reveal';</script>
@@ -53,6 +56,7 @@
 	<section class="hero grid-bg">
 		<div class="wrap">
 			<div>
+				<img class="hero-avatar" src="img/crop.jpg" alt="Harrison Jansma">
 				<div class="status-chip">
 					<span class="live-dot"></span>
 					<span>ML Engineer &amp; Data Science Manager</span>
@@ -74,7 +78,7 @@
 					</div>
 				</div>
 				<div class="btn-row">
-					<a class="btn btn--grad btn--lg" href="#work">See the work</a>
+					<a class="btn btn--grad btn--lg" href="#work">View portfolio</a>
 					<a class="btn btn--ghost btn--lg" href="HarrisonJansmaResume.pdf" target="_blank">R&eacute;sum&eacute;</a>
 				</div>
 			</div>
@@ -112,7 +116,7 @@
 				<div class="model-row">
 					<div class="model-node"><b>Agentic<br>summarization</b><span>GPT &middot; judge</span></div>
 					<div class="model-node"><b>Procedure<br>RAG</b><span>pgvector</span></div>
-					<div class="model-node"><b>Frustration<br>detection</b><span>DistilBERT</span></div>
+					<div class="model-node"><b>Frustration<br>detection</b><span>LLM</span></div>
 				</div>
 
 				<div class="fan fan-in">
@@ -141,7 +145,7 @@
 					<div class="kicker">01 — Selected work</div>
 					<h2>Systems in production</h2>
 				</div>
-				<p>Flagship generative-AI systems I've taken from prototype to production at Capital One — starting with a public, clickable rebuild you can try yourself.</p>
+				<p>Flagship generative-AI systems I've taken from prototype to production at Capital One — starting with a public, analogous solution built with Deepgram and OpenAI tools you can try yourself.</p>
 			</div>
 
 			<div class="featured featured--home" data-reveal>
@@ -225,13 +229,12 @@
 						<span class="row-cat">Real-Time NLP</span>
 						<span class="row-title">Frustrated-Customer Detection</span>
 						<span class="pill-row">
-							<span class="pill">DistilBERT</span>
+							<span class="pill">LLMs</span>
 							<span class="pill">PyTorch</span>
 							<span class="pill">Kafka</span>
-							<span class="pill">LLMs</span>
 						</span>
 					</span>
-					<span class="row-desc">Capital One's first real-time AI alert system — streaming DistilBERT and LLM sentiment over live calls at scale, alerting managers to de-escalate in real time.</span>
+					<span class="row-desc">Capital One's first real-time AI alert system — streaming LLM sentiment over live calls at scale, alerting managers to de-escalate in real time.</span>
 					<span class="row-metrics">
 						<span><b>Real-time</b><span>Live alerting</span></span>
 						<span><b>At scale</b><span>Across the business</span></span>
